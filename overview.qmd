@@ -17,6 +17,10 @@ Objectives
 
 The objectives of this project are as follows:
 
+-   Objective 1
+
+-   Objective 2
+
 ## 
 Tasks
 
