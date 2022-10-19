@@ -1,18 +1,17 @@
 ---
 title: "Overview"
 editor: visual
-theme: cosmo
 ---
 
-# Introduction
+## Introduction
 
 In this project, we are given two major themes and sub-theme. Detailed description of this project is available [here](https://smt201-ay2022-23t1.netlify.app/gisproject). Land cover classification is a common application area of digital image analysis.
 
-# Literature review
+## Literature review
 
 In this project, the following articles will be reviewed.
 
-# Objectives
+## Objectives
 
 The objectives of this project are as follows:
 
@@ -20,6 +19,6 @@ The objectives of this project are as follows:
 
 -   Objective 2
 
-# Tasks
+## Tasks
 
 The project tasks are as follows:

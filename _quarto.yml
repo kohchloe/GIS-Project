@@ -2,25 +2,44 @@ project:
   type: website
 
 website:
-  title: "GIS Project"
+  title: "G2 Group 5"
   navbar:
     left: 
       - href: overview.html
-        text: Overview
-      - href: methodology.qmd
-        text: Methodology
-      - href: analysis.qmd
-        text: Analysis
-      - href: findings.qmd
-        text: Results & Discussion
+        text: "Overview"
+      - href: poster.qmd
+        text: "Poster"
+      - sidebar:datapreparation
+      - sidebar:siteselection
+      - href: webmaps.qmd
+        text: "Web Maps"
     right:
       - href: index.qmd
-        text: Home
-      - about.qmd
-
+        text: "Home"
+      - href: about.qmd
+        text: "About Us"
+    
+  sidebar:
+    - id: datapreparation
+      title: "Data Preparation"
+      style: "docked"
+      background: light
+      collapse-level: 2
+      contents: 
+        - datapreparation.qmd
+        - datapreparation-1.qmd
+    - id: siteselection
+      title: "Site Selection"
+      style: "docked"
+      background: light
+      collapse-level: 2
+      contents: 
+        - mergers.qmd
+        - closures.qmd
+    
 format:
   html:
-    theme: cosmo
+    theme: spacelab
     css: styles.css
     toc: true
 
