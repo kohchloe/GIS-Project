@@ -5,19 +5,19 @@ website:
   title: "G2 Group 5"
   navbar:
     left: 
-      - href: overview.html
-        text: "Overview"
+      - href: proposal.html
+        text: "Proposal"
       - href: poster.qmd
         text: "Poster"
       - sidebar:datapreparation
       - sidebar:siteselection
       - href: webmaps.qmd
         text: "Web Maps"
+      - href: report.qmd
+        text: "Report"
     right:
-      - href: index.qmd
-        text: "Home"
       - href: about.qmd
-        text: "About Us"
+        text: "About"
     
   sidebar:
     - id: datapreparation

@@ -2,4 +2,12 @@
 title: "GIS Project"
 ---
 
-Welcome to our GIS Project web site.
+Hello, welcome there!
+
+We are Chloe, Danelle and Jayme.
+
+In this website, we share our project findings and insights gained.
+
+Access our GitHub Repository here: \[github link\]*.*
+
+A short description of not more than 350 word summarising the motivation, objectives, methodology and key findings,

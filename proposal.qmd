@@ -1,0 +1,55 @@
+---
+title: "Proposal"
+editor: visual
+---
+
+## Project Motivation
+
+\[proj name\] was brought forth as part of the *SMT201 Geographical Information Systems (GIS) for Urban Planning* module supported by Professor Kam Tin Seong from Singapore Management University's School of Computing and Information Systems.\
+
+Our team is passionate about finding out about the impacts of merging education institutions in Singapore as this is something that has affected us personally and is close to our hearts.\
+
+We broke down the sub theme and identified some related problems that Singapore currently faces:
+
+-   Decreasing birth rates
+
+-   Limited land for development
+
+-   Parents\' demand for better education near them 
+
+With this in mind, we concluded that the decreasing birth rates and changing demographics in Singapore have brought about lower enrolment rates to schools throughout the nation. The mergers were conducted with the intention of better allocating resources to areas that may need such as land for redevelopment. 
+
+## Project Objectives
+
+The objectives of this project are as follows:
+
+-   Objective 1
+
+-   Objective 2
+
+We want to find out the effects of merging schools in Singapore and analyse the cost benefit analysis\*, why the government chose to merge specific schools instead of another and whether there are enough schools in the area to meet demands in different regions of Singapore. We also wanted to find out which areas have less schools and hence are less accessible which may potentially affect the choices of housing. Afterwards, we want to analyse how all these factors have affected the equity of access to schools in Singapore. We also considered finding the benefits to those where the school merged as compared to how people living near the area of closed down schools have \'suffered\' from it.
+
+\*However, upon consultation with Prof Kam, we decided to modify our project objective as this may not be a realistic objective for this project.
+
+## 
+
+## Literature review
+
+In this project, the following articles will be reviewed.
+
+## 
+
+## Scope of Work
+
+The project tasks are as follows:
+
+## Project Schedule
+
+### Our Gantt Chart
+
+\[add image\]
+
+## Delegation of Work
+
+\[add tables\]
+
