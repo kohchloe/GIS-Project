@@ -21,7 +21,7 @@ website:
     
   sidebar:
     - id: data
-      title: "Data Preparation"
+      title: "Data"
       style: "docked"
       background: light
       collapse-level: 2
@@ -39,7 +39,7 @@ website:
     
 format:
   html:
-    theme: spacelab
+    theme: lux
     css: styles.css
     toc: true
 
