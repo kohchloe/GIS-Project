@@ -1,0 +1,6 @@
+---
+title: "Poster"
+editor: visual
+---
+
+This is our team's poster.

@@ -1,0 +1,20 @@
+---
+title: "Data Collection"
+editor: visual
+---
+
+-   education.csv - provides general information of public primary schools, secondary schools and junior colleges. This data set was downloaded from Data.gov.sg and geocoded by using SLA OneMap Api.
+
+-   Master Plan 2019 Subzone
+
+-   POP2020 - provides population by age group as at June 2020. It is downloaded from Department of Statistics (DOS), Singapore. The data set provides multiple years of population data. 
+
+-   education.csv contains data of schools from 2021 onwards after the mergers and closures, hence we have to manipulate the data. Data is manipulated using information from the websites below:\
+
+-   <https://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/page/2/> 
+
+-   <https://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/> 
+
+-   <https://www.straitstimes.com/singapore/education/new-names-of-merging-junior-colleges-to-be-combination-of-original-names>
+
+-   <https://sg.theasianparent.com/school-merger-in-singapore>

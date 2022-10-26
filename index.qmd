@@ -2,4 +2,11 @@
 title: "GIS Project"
 ---
 
-A short description of not more than 350 word summarising the motivation, objectives, methodology and key findings,
+\[proj name\] was brought forth as part of the *SMT201 Geographical Information Systems (GIS) for Urban Planning* module supported by Professor Kam Tin Seong from Singapore Management University's School of Computing and Information Systems.
+
+Due to the low birth rates and changing demographics in Singapore, the government has decided to merge different primary, secondary and tertiary schools so as to meet the demands of the changing population. This project aims to find out the effect of school mergers in Singapore on the accessibility of schools for people. Our objectives are to analyse our findings so that we can evaluate whether there are enough schools in certain areas and how the mergers can potentially affect people\'s choice of housing. We plan to do so by comparing the locations of schools and their accessibility before and after merger. 
+
+Our findings have concluded that (key findings) and this will be explored further in our report. 
+
+\
+
