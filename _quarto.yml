@@ -9,7 +9,7 @@ website:
         text: "Proposal"
       - href: poster.qmd
         text: "Poster"
-      - sidebar:datapreparation
+      - sidebar:data
       - sidebar:siteselection
       - href: webmaps.qmd
         text: "Web Maps"
