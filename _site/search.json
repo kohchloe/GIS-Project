@@ -4,41 +4,55 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "1 + 1\n\n[1] 2"
+    "text": "We are Chloe, Danelle and Jayme.\nIn this website, we share our project findings and insights gained.\nAccess our GitHub Repository here: [github link]."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "GIS Project",
     "section": "",
-    "text": "Welcome to our GIS Project web site."
+    "text": "A short description of not more than 350 word summarising the motivation, objectives, methodology and key findings,"
   },
   {
-    "objectID": "overview.html",
-    "href": "overview.html",
-    "title": "Overview",
+    "objectID": "proposal.html",
+    "href": "proposal.html",
+    "title": "Proposal",
     "section": "",
-    "text": "In this project, we are given two major themes and sub-theme. Detailed description of this project is available here. Land cover classification is a common application area of digital image analysis."
+    "text": "[proj name] was brought forth as part of the SMT201 Geographical Information Systems (GIS) for Urban Planning module supported by Professor Kam Tin Seong from Singapore Management University’s School of Computing and Information Systems.\n\nOur team is passionate about finding out about the impacts of merging education institutions in Singapore as this is something that has affected us personally and is close to our hearts.\n\nWe broke down the sub theme and identified some related problems that Singapore currently faces:\n\nDecreasing birth rates\nLimited land for development\nParents' demand for better education near them \n\nWith this in mind, we concluded that the decreasing birth rates and changing demographics in Singapore have brought about lower enrolment rates to schools throughout the nation. The mergers were conducted with the intention of better allocating resources to areas that may need such as land for redevelopment."
   },
   {
-    "objectID": "overview.html#literature-review",
-    "href": "overview.html#literature-review",
-    "title": "Overview",
+    "objectID": "proposal.html#project-objectives",
+    "href": "proposal.html#project-objectives",
+    "title": "Proposal",
+    "section": "Project Objectives",
+    "text": "Project Objectives\nThe objectives of this project are as follows:\n\nObjective 1\nObjective 2\n\nWe want to find out the effects of merging schools in Singapore and analyse the cost benefit analysis*, why the government chose to merge specific schools instead of another and whether there are enough schools in the area to meet demands in different regions of Singapore. We also wanted to find out which areas have less schools and hence are less accessible which may potentially affect the choices of housing. Afterwards, we want to analyse how all these factors have affected the equity of access to schools in Singapore. We also considered finding the benefits to those where the school merged as compared to how people living near the area of closed down schools have 'suffered' from it.\n*However, upon consultation with Prof Kam, we decided to modify our project objective as this may not be a realistic objective for this project."
+  },
+  {
+    "objectID": "proposal.html#literature-review",
+    "href": "proposal.html#literature-review",
+    "title": "Proposal",
     "section": "Literature review",
     "text": "Literature review\nIn this project, the following articles will be reviewed."
   },
   {
-    "objectID": "overview.html#objectives",
-    "href": "overview.html#objectives",
-    "title": "Overview",
-    "section": "Objectives",
-    "text": "Objectives\nThe objectives of this project are as follows:\n\nObjective 1\nObjective 2"
+    "objectID": "proposal.html#scope-of-work",
+    "href": "proposal.html#scope-of-work",
+    "title": "Proposal",
+    "section": "Scope of Work",
+    "text": "Scope of Work\nThe project tasks are as follows:"
   },
   {
-    "objectID": "overview.html#tasks",
-    "href": "overview.html#tasks",
-    "title": "Overview",
-    "section": "Tasks",
-    "text": "Tasks\nThe project tasks are as follows:"
+    "objectID": "proposal.html#project-schedule",
+    "href": "proposal.html#project-schedule",
+    "title": "Proposal",
+    "section": "Project Schedule",
+    "text": "Project Schedule\n\nOur Gantt Chart\n[add image]\n\n\nDelegation of Work\n[add tables]"
+  },
+  {
+    "objectID": "proposal.html#delegation-of-work",
+    "href": "proposal.html#delegation-of-work",
+    "title": "Proposal",
+    "section": "Delegation of Work",
+    "text": "Delegation of Work\n[add tables]"
   }
 ]

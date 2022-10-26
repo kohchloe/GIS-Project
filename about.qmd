@@ -1,9 +1,12 @@
 ---
 title: "About"
+editor: visual
 ---
 
-About this site
+## Hello, welcome there!
 
-```{r}
-1 + 1
-```
+We are Chloe, Danelle and Jayme.
+
+In this website, we share our project findings and insights gained.
+
+Access our GitHub Repository here: \[github link\]*.*
