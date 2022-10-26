@@ -20,14 +20,14 @@ website:
         text: "About"
     
   sidebar:
-    - id: datapreparation
+    - id: data
       title: "Data Preparation"
       style: "docked"
       background: light
       collapse-level: 2
       contents: 
+        - datacollection.qmd
         - datapreparation.qmd
-        - datapreparation-1.qmd
     - id: siteselection
       title: "Site Selection"
       style: "docked"

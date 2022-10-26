@@ -7,25 +7,46 @@
     "text": "We are Chloe, Danelle and Jayme.\nIn this website, we share our project findings and insights gained.\nAccess our GitHub Repository here: [github link]."
   },
   {
+    "objectID": "datacollection.html",
+    "href": "datacollection.html",
+    "title": "Data Collection",
+    "section": "",
+    "text": "education.csv - provides general information of public primary schools, secondary schools and junior colleges. This data set was downloaded from Data.gov.sg and geocoded by using SLA OneMap Api.\nMaster Plan 2019 Subzone\nPOP2020 - provides population by age group as at June 2020. It is downloaded from Department of Statistics (DOS), Singapore. The data set provides multiple years of population data. \neducation.csv contains data of schools from 2021 onwards after the mergers and closures, hence we have to manipulate the data. Data is manipulated using information from the websites below:\n\nhttps://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/page/2/ \nhttps://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/ \nhttps://www.straitstimes.com/singapore/education/new-names-of-merging-junior-colleges-to-be-combination-of-original-names\nhttps://sg.theasianparent.com/school-merger-in-singapore"
+  },
+  {
+    "objectID": "datapreparation.html",
+    "href": "datapreparation.html",
+    "title": "Data Preparation",
+    "section": "",
+    "text": "We merged the data….."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "GIS Project",
     "section": "",
-    "text": "A short description of not more than 350 word summarising the motivation, objectives, methodology and key findings,"
+    "text": "Due to the low birth rates and changing demographics in Singapore, the government has decided to merge different primary, secondary and tertiary schools so as to meet the demands of the changing population. This project aims to find out the effect of school mergers in Singapore on the accessibility of schools for people. Our objectives are to analyse our findings so that we can evaluate whether there are enough schools in certain areas and how the mergers can potentially affect people's choice of housing. We plan to do so by comparing the locations of schools and their accessibility before and after merger. \nOur findings have concluded that (key findings) and this will be explored further in our report."
+  },
+  {
+    "objectID": "poster.html",
+    "href": "poster.html",
+    "title": "Poster",
+    "section": "",
+    "text": "This is our team’s poster."
   },
   {
     "objectID": "proposal.html",
     "href": "proposal.html",
     "title": "Proposal",
     "section": "",
-    "text": "[proj name] was brought forth as part of the SMT201 Geographical Information Systems (GIS) for Urban Planning module supported by Professor Kam Tin Seong from Singapore Management University’s School of Computing and Information Systems.\n\nOur team is passionate about finding out about the impacts of merging education institutions in Singapore as this is something that has affected us personally and is close to our hearts.\n\nWe broke down the sub theme and identified some related problems that Singapore currently faces:\n\nDecreasing birth rates\nLimited land for development\nParents' demand for better education near them \n\nWith this in mind, we concluded that the decreasing birth rates and changing demographics in Singapore have brought about lower enrolment rates to schools throughout the nation. The mergers were conducted with the intention of better allocating resources to areas that may need such as land for redevelopment."
+    "text": "Singapore has been facing a serious issue of low birth rates and changing demographics in our housing estates in recent years. As a result, the government has decided to merge pairs of schools so as to ensure that all schools still have an adequate number of students and a vibrant learning experience with a good range of educational programmes and co-curricular activities.\nHence, in this project, we want to find out how these mergers have affected the accessibility of schools in Singapore for students. We studied the data collected and prepared a report to present our findings and results."
   },
   {
     "objectID": "proposal.html#project-objectives",
     "href": "proposal.html#project-objectives",
     "title": "Proposal",
     "section": "Project Objectives",
-    "text": "Project Objectives\nThe objectives of this project are as follows:\n\nObjective 1\nObjective 2\n\nWe want to find out the effects of merging schools in Singapore and analyse the cost benefit analysis*, why the government chose to merge specific schools instead of another and whether there are enough schools in the area to meet demands in different regions of Singapore. We also wanted to find out which areas have less schools and hence are less accessible which may potentially affect the choices of housing. Afterwards, we want to analyse how all these factors have affected the equity of access to schools in Singapore. We also considered finding the benefits to those where the school merged as compared to how people living near the area of closed down schools have 'suffered' from it.\n*However, upon consultation with Prof Kam, we decided to modify our project objective as this may not be a realistic objective for this project."
+    "text": "Project Objectives\nOur objective is to prepare a report of survey covering these aspects of our study area to answer these important questions:\n\n\nHow has the merging and closure of schools affected accessibility of schools to people? \nAre there enough schools in the area to meet demands in different regions of Singapore? \nWhich areas have less schools and hence are less accessible which may potentially affect the choices of housing?\nAnalyse how all these factors have affected the equity of access to schools in Singapore."
   },
   {
     "objectID": "proposal.html#literature-review",
@@ -39,7 +60,7 @@
     "href": "proposal.html#scope-of-work",
     "title": "Proposal",
     "section": "Scope of Work",
-    "text": "Scope of Work\nThe project tasks are as follows:"
+    "text": "Scope of Work\nThe project will comprise of, but not limited to the followings steps:\n\nSelection of project areas of schools in Singapore and years that mergers took place.\nCollection, extraction, integration, transformation and wrangling of data of schools in Singapore.\nDesigning and building GIS model and database to map the accessibility of schools in Singapore.\nPreparing report of findings\nPerforming site suitability analysis by integrating GIS and multi-criteria evaluation methods.\nPreparing site suitability analysis report including detailed discussion of the analysing method used.\nPreparing poster and project webpage."
   },
   {
     "objectID": "proposal.html#project-schedule",
@@ -49,10 +70,17 @@
     "text": "Project Schedule\n\nOur Gantt Chart\n[add image]\n\n\nDelegation of Work\n[add tables]"
   },
   {
-    "objectID": "proposal.html#delegation-of-work",
-    "href": "proposal.html#delegation-of-work",
-    "title": "Proposal",
-    "section": "Delegation of Work",
-    "text": "Delegation of Work\n[add tables]"
+    "objectID": "report.html",
+    "href": "report.html",
+    "title": "Report",
+    "section": "",
+    "text": "This is our report."
+  },
+  {
+    "objectID": "webmaps.html",
+    "href": "webmaps.html",
+    "title": "Web Maps",
+    "section": "",
+    "text": "These are our maps."
   }
 ]
