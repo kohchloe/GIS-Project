@@ -9,9 +9,9 @@
   {
     "objectID": "datacollection.html",
     "href": "datacollection.html",
-    "title": "Data Collection",
+    "title": "Data Collection and Preparation",
     "section": "",
-    "text": "education.csv - provides general information of public primary schools, secondary schools and junior colleges. This data set was downloaded from Data.gov.sg and geocoded by using SLA OneMap Api.\nMaster Plan 2019 Subzone\nPOP2020 - provides population by age group as at June 2020. It is downloaded from Department of Statistics (DOS), Singapore. The data set provides multiple years of population data. \neducation.csv contains data of schools from 2021 onwards after the mergers and closures, hence we have to manipulate the data. Data is manipulated using information from the websites below:\n\nhttps://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/page/2/ \nhttps://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/ \nhttps://www.straitstimes.com/singapore/education/new-names-of-merging-junior-colleges-to-be-combination-of-original-names\nhttps://sg.theasianparent.com/school-merger-in-singapore"
+    "text": "The data sets that were used for this study are as follows:\n\n\n\n\n\n\n\n\nFile Name\nDescription\nSource\n\n\nEducation\nProvides information about primary schools, secondary schools and junior colleges.\ndata.gov.sg\n\n\nMaster Plan 2019 Subzone\n\n\n\n\nPOP2020\nProvides multiple years of population data by age group as at June 2020.\nDepartment of Statistics (DOS), Singapore"
   },
   {
     "objectID": "datapreparation.html",
@@ -82,5 +82,12 @@
     "title": "Web Maps",
     "section": "",
     "text": "These are our maps."
+  },
+  {
+    "objectID": "datacollection.html#data-preparation",
+    "href": "datacollection.html#data-preparation",
+    "title": "Data Collection and Preparation",
+    "section": "Data Preparation",
+    "text": "Data Preparation\n\neducation.csv was downloaded from Data.gov.sg and geocoded by using SLA OneMap Api.\neducation.csv contains data of schools from 2021 onwards after the mergers and closures, hence we have to manipulate the data. Data is manipulated using information from the websites below:\n\nhttps://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/page/2/ \nhttps://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/ \nhttps://www.straitstimes.com/singapore/education/new-names-of-merging-junior-colleges-to-be-combination-of-original-names\nhttps://sg.theasianparent.com/school-merger-in-singapore"
   }
 ]
