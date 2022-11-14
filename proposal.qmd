@@ -7,23 +7,25 @@ editor: visual
 
 Singapore has been facing a serious issue of low birth rates and changing demographics in our housing estates in recent years. As a result, the government has decided to merge pairs of schools so as to ensure that all schools still have an adequate number of students and a vibrant learning experience with a good range of educational programmes and co-curricular activities.
 
-Hence, in this project, we want to find out how these mergers have affected the accessibility of schools in Singapore for students. We studied the data collected and prepared a report to present our findings and results.
+Through this project, we want to find out how these mergers have affected the accessibility of schools in Singapore for students. We hope to be able to provide meaningful insights on the effects of these mergers so as to provide actionable suggestions for future planning of land use.
 
 ## Project Objectives
 
-Our objective is to prepare a report of survey covering these aspects of our study area to answer these important questions:\
+Our objective is to **analyse how school mergers have affected the equity of access to schools in Singapore**.
 
--   How has the merging and closure of schools affected accessibility of schools to people? 
+We plan to conduct this by comparing the locations of schools and their accessibility before and after merger, while considering the master plan.
 
--   Are there enough schools in the area to meet demands in different regions of Singapore? 
+Our 2 research questions are as follows:
 
--   Which areas have less schools and hence are less accessible which may potentially affect the choices of housing?
+-   **Are there enough schools in the area to meet demands in different regions of Singapore?**
 
--   Analyse how all these factors have affected the equity of access to schools in Singapore.
+    -   Which areas have less schools and hence are less accessible which may potentially affect the choices of housing?
 
-## Literature review
+-   **How has the merging and closure of schools affected accessibility of schools to people?**
 
-In this project, the following articles will be reviewed.
+## Data
+
+\[insert table\]
 
 ## 
 
