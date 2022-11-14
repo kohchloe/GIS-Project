@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "We are Chloe, Danelle and Jayme.\nIn this website, we share our project findings and insights gained.\nAccess our GitHub Repository here: [github link]."
+    "text": "We are Danelle, Jayme, and Chloe.\n\n\n\nG2T5 at our Townhall Presentation\n\n\nIn this website, we share our project findings and insights gained.\nAccess our GitHub Repository here: [github link]."
   },
   {
     "objectID": "datacollection.html",
@@ -23,9 +23,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "GIS Project",
+    "title": "G2T5: MerGIS",
     "section": "",
-    "text": "Due to the low birth rates and changing demographics in Singapore, the government has decided to merge different primary, secondary and tertiary schools so as to meet the demands of the changing population. This project aims to find out the effect of school mergers in Singapore on the accessibility of schools for people. Our objectives are to analyse our findings so that we can evaluate whether there are enough schools in certain areas and how the mergers can potentially affect people's choice of housing. We plan to do so by comparing the locations of schools and their accessibility before and after merger. \nOur findings have concluded that (key findings) and this will be explored further in our report."
+    "text": "Due to the low birth rates and changing demographics in Singapore, the government has decided to merge different primary, secondary and tertiary schools so as to meet the demands of the changing population.\nThis project aims to find out the effect that school mergers in Singapore has on Singaporeans’ accessibility to schools. This is done by evaluating whether there are enough schools in each subzone and how the mergers can potentially affect people's choice of housing.\nOur findings have concluded that the merging of schools in Singapore has brought about an overall decrease in accessibility to schools for people. While the changes in accessibility are not very significant and only certain areas in Singapore have been affected by these mergers, they can have implications on costs and standard of living. This will be explored further in our report."
   },
   {
     "objectID": "poster.html",
@@ -39,35 +39,35 @@
     "href": "proposal.html",
     "title": "Proposal",
     "section": "",
-    "text": "Singapore has been facing a serious issue of low birth rates and changing demographics in our housing estates in recent years. As a result, the government has decided to merge pairs of schools so as to ensure that all schools still have an adequate number of students and a vibrant learning experience with a good range of educational programmes and co-curricular activities.\nHence, in this project, we want to find out how these mergers have affected the accessibility of schools in Singapore for students. We studied the data collected and prepared a report to present our findings and results."
+    "text": "Singapore has been facing a serious issue of low birth rates and changing demographics in our housing estates in recent years. As a result, the government has decided to merge pairs of schools so as to ensure that all schools still have an adequate number of students and a vibrant learning experience with a good range of educational programmes and co-curricular activities.\nThrough this project, we want to find out how these mergers have affected the accessibility of schools in Singapore for students. We hope to be able to provide meaningful insights on the effects of these mergers so as to provide actionable suggestions for future planning of land use."
   },
   {
     "objectID": "proposal.html#project-objectives",
     "href": "proposal.html#project-objectives",
     "title": "Proposal",
     "section": "Project Objectives",
-    "text": "Project Objectives\nOur objective is to prepare a report of survey covering these aspects of our study area to answer these important questions:\n\n\nHow has the merging and closure of schools affected accessibility of schools to people? \nAre there enough schools in the area to meet demands in different regions of Singapore? \nWhich areas have less schools and hence are less accessible which may potentially affect the choices of housing?\nAnalyse how all these factors have affected the equity of access to schools in Singapore."
+    "text": "Project Objectives\nOur objective is to analyse how school mergers have affected the equity of access to schools in Singapore.\nWe plan to conduct this by comparing the locations of schools and their accessibility before and after merger, while considering the master plan.\nOur 2 research questions are as follows:\n\nAre there enough schools in the area to meet demands in different regions of Singapore?\n\nWhich areas have less schools and hence are less accessible which may potentially affect the choices of housing?\n\nHow has the merging and closure of schools affected accessibility of schools to people?"
   },
   {
-    "objectID": "proposal.html#literature-review",
-    "href": "proposal.html#literature-review",
+    "objectID": "proposal.html#data",
+    "href": "proposal.html#data",
     "title": "Proposal",
-    "section": "Literature review",
-    "text": "Literature review\nIn this project, the following articles will be reviewed."
+    "section": "Data",
+    "text": "Data\nWe used datasets from Data.gov.sg and Department of Statistics Singapore. Refer to the ‘Data’ tab for more information."
   },
   {
     "objectID": "proposal.html#scope-of-work",
     "href": "proposal.html#scope-of-work",
     "title": "Proposal",
     "section": "Scope of Work",
-    "text": "Scope of Work\nThe project will comprise of, but not limited to the followings steps:\n\nSelection of project areas of schools in Singapore and years that mergers took place.\nCollection, extraction, integration, transformation and wrangling of data of schools in Singapore.\nDesigning and building GIS model and database to map the accessibility of schools in Singapore.\nPreparing report of findings\nPerforming site suitability analysis by integrating GIS and multi-criteria evaluation methods.\nPreparing site suitability analysis report including detailed discussion of the analysing method used.\nPreparing poster and project webpage."
+    "text": "Scope of Work\nThe project will comprise of, but not limited to the followings steps:\n\nSelection of project areas of schools in Singapore and years that mergers took place.\nCollection, extraction, integration, transformation and wrangling of data of schools in Singapore.\nDesigning and building GIS model and database to map the accessibility of schools in Singapore.\nPreparing report of findings.\nPerforming site suitability analysis by integrating GIS and multi-criteria evaluation methods.\nPreparing site suitability analysis report including detailed discussion of the analysing method used.\nPreparing poster and project webpage."
   },
   {
     "objectID": "proposal.html#project-schedule",
     "href": "proposal.html#project-schedule",
     "title": "Proposal",
     "section": "Project Schedule",
-    "text": "Project Schedule\n\nOur Gantt Chart\n[add image]\n\n\nDelegation of Work\n[add tables]"
+    "text": "Project Schedule\n\nOur Gantt Chart"
   },
   {
     "objectID": "report.html",

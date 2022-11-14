@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "G2 Group 5"
+  title: "G2T5: MerGIS"
   navbar:
     left: 
       - href: proposal.html
@@ -10,7 +10,6 @@ website:
       - href: poster.qmd
         text: "Poster"
       - sidebar:data
-      - sidebar:siteselection
       - href: webmaps.qmd
         text: "Web Maps"
       - href: report.qmd

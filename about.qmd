@@ -5,7 +5,9 @@ editor: visual
 
 ## Hello, welcome there!
 
-We are Chloe, Danelle and Jayme.
+We are Danelle, Jayme, and Chloe.
+
+![G2T5 at our Townhall Presentation](images/gis%20group%20pic-01.JPG){fig-align="center"}
 
 In this website, we share our project findings and insights gained.
 

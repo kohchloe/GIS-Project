@@ -4,3 +4,5 @@ editor: visual
 ---
 
 This is our team's poster.
+
+![](images/SMT201%20G2T5%20Poster.jpg){fig-align="left"}

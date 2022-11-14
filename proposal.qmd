@@ -25,9 +25,7 @@ Our 2 research questions are as follows:
 
 ## Data
 
-\[insert table\]
-
-## 
+We used datasets from Data.gov.sg and Department of Statistics Singapore. Refer to the 'Data' tab for more information.
 
 ## Scope of Work
 
@@ -39,7 +37,7 @@ The project will comprise of, but not limited to the followings steps:
 
 -   Designing and building GIS model and database to map the accessibility of schools in Singapore.
 
--   Preparing report of findings
+-   Preparing report of findings.
 
 -   Performing site suitability analysis by integrating GIS and multi-criteria evaluation methods.
 
@@ -51,8 +49,4 @@ The project will comprise of, but not limited to the followings steps:
 
 ### Our Gantt Chart
 
-\[add image\]
-
-### Delegation of Work
-
-\[add tables\]
+![](images/GIS%20Gantt%20Chart.jpg){fig-align="left"}

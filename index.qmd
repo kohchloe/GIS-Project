@@ -1,12 +1,13 @@
 ---
-title: "GIS Project"
+title: "G2T5: MerGIS"
 ---
 
-\[proj name\] was brought forth as part of the *SMT201 Geographical Information Systems (GIS) for Urban Planning* module supported by Professor Kam Tin Seong from Singapore Management University's School of Computing and Information Systems.
+MerGIS was brought forth as part of the SMT201 Geographical Information Systems for Urban Planning module supported by Professor Kam Tin Seong from Singapore Management University's School of Computing and Information Systems.
 
-Due to the low birth rates and changing demographics in Singapore, the government has decided to merge different primary, secondary and tertiary schools so as to meet the demands of the changing population. This project aims to find out the effect of school mergers in Singapore on the accessibility of schools for people. Our objectives are to analyse our findings so that we can evaluate whether there are enough schools in certain areas and how the mergers can potentially affect people\'s choice of housing. We plan to do so by comparing the locations of schools and their accessibility before and after merger. 
+Due to the low birth rates and changing demographics in Singapore, the government has decided to merge different primary, secondary and tertiary schools so as to meet the demands of the changing population.
 
-Our findings have concluded that (key findings) and this will be explored further in our report. 
+This project aims to **find out the effect that school mergers in Singapore has on Singaporeans' accessibility to schools**. This is done by evaluating whether there are enough schools in each subzone and how the mergers can potentially affect people\'s choice of housing.
+
+Our findings have concluded that the merging of schools in Singapore has brought about an overall decrease in accessibility to schools for people. While the changes in accessibility are not very significant and only certain areas in Singapore have been affected by these mergers, they can have implications on costs and standard of living. This will be explored further in our report. 
 
 \
-
