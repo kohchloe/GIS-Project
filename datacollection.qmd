@@ -1,30 +1,14 @@
 ---
-title: "Data Collection and Preparation"
+title: "Data Collection"
 editor: visual
 ---
 
-## Collection of Required Data
+The data sets that were used for this study and their respective sources are as follows:
 
-The data sets that were used for this study are as follows:
+| **File Name**                                                                                        | Description                                                                                                | Source                                                                                                                                            |
+|-------------------------------|------------------------------------------------|-----------------------|
+| education (School Directory and Information)                                                         | Provides information about primary schools, secondary schools and junior colleges.                         | [data.gov.sg](https://data.gov.sg/dataset/school-directory-and-information)                                                                       |
+| MP19 (Master Plan 2019 Subzone Boundary (No Sea))                                                    | Provides information about the Urban Redevelopment Authority's (URA) regions, planning areas and subzones. | [data.gov.sg](https://data.gov.sg/dataset/master-plan-2019-subzone-boundary-no-sea)                                                               |
+| POP2020 (Singapore Residents by Planning Area / Subzone, Single Year of Age and Sex, June 2011-2020) | Provides multiple years of population data by age group as at June 2020.                                   | [Department of Statistics (DOS), Singapore](https://www.singstat.gov.sg/find-data/search-by-theme/population/geographic-distribution/latest-data) |
 
-|                           |                                                                                    |                                           |
-|---------------------------|------------------------------------------------------------------------------------|-------------------------------------------|
-| **File Name**             | Description                                                                        | Source                                    |
-| Education 	                | Provides information about primary schools, secondary schools and junior colleges. | data.gov.sg                               |
-| Master Plan 2019 Subzone  |                                                                                    |                                           |
-| POP2020 	                  | Provides multiple years of population data by age group as at June 2020.           | Department of Statistics (DOS), Singapore |
-|                           |                                                                                    |                                           |
-
-## Data Preparation
-
--   education.csv was downloaded from Data.gov.sg and geocoded by using SLA OneMap Api.
-
--   education.csv contains data of schools from 2021 onwards after the mergers and closures, hence we have to manipulate the data. Data is manipulated using information from the websites below:\
-
--   <https://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/page/2/> 
-
--   <https://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/> 
-
--   <https://www.straitstimes.com/singapore/education/new-names-of-merging-junior-colleges-to-be-combination-of-original-names>
-
--   <https://sg.theasianparent.com/school-merger-in-singapore>
+## 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>G2T5: MerGIS - Data Preparation</title>
+<title>G2T5: MerGIS - Preparation of Accessibility Map</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -90,18 +90,14 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-data">    
         <li>
     <a class="dropdown-item" href="./datacollection.html">
- <span class="dropdown-text">Data Collection</span></a>
+ <span class="dropdown-text">Data Collection and Preparation</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./datapreparation.html">
- <span class="dropdown-text">Data Preparation</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./chloropleth.html">
  <span class="dropdown-text">Preparation of Chloropleth Map</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./accessibility.html">
+    <a class="dropdown-item" href="./datapreparation2.html">
  <span class="dropdown-text">Preparation of Accessibility Map</span></a>
   </li>  
     </ul>
@@ -124,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Data Preparation</h1>
+      <h1 class="quarto-secondary-nav-title">Preparation of Accessibility Map</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -139,22 +135,17 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./datacollection.html" class="sidebar-item-text sidebar-link">Data Collection</a>
+  <a href="./datacollection.html" class="sidebar-item-text sidebar-link">Data Collection and Preparation</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./datapreparation.html" class="sidebar-item-text sidebar-link active">Data Preparation</a>
+  <a href="./datapreparation.html" class="sidebar-item-text sidebar-link">Preparation of Chloropleth Map</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chloropleth.html" class="sidebar-item-text sidebar-link">Preparation of Chloropleth Map</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./accessibility.html" class="sidebar-item-text sidebar-link">Preparation of Accessibility Map</a>
+  <a href="./datapreparation2.html" class="sidebar-item-text sidebar-link active">Preparation of Accessibility Map</a>
   </div>
 </li>
     </ul>
@@ -162,21 +153,14 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#school-directory-and-information" id="toc-school-directory-and-information" class="nav-link active" data-scroll-target="#school-directory-and-information">School Directory and Information</a></li>
-  <li><a href="#singapore-residents-by-planning-area-subzone" id="toc-singapore-residents-by-planning-area-subzone" class="nav-link" data-scroll-target="#singapore-residents-by-planning-area-subzone">Singapore Residents by Planning Area / Subzone</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Data Preparation</h1>
+<h1 class="title d-none d-lg-block">Preparation of Accessibility Map</h1>
 </div>
 
 
@@ -190,31 +174,8 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="school-directory-and-information" class="level3">
-<h3 class="anchored" data-anchor-id="school-directory-and-information">School Directory and Information</h3>
-<p>These are the steps we took to prepare the education.csv file for our QGIS artifact.</p>
-<ol type="1">
-<li><p>Firstly, to obtain the Longitude and Latitude of schools, education.csv was geocoded by using SLA OneMap Api.</p></li>
-<li><p>Next, as education.csv only contained data of schools from 2021 after the mergers and closures, we manipulated the data by manually unmerging the schools and creating a new excel sheet for each year.</p>
-<p>Data was manipulated using information from the following websites:</p>
-<ul>
-<li><p>fionaseah.com: <a href="https://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/page/2/">HISTORY: Closed and Merged Schools in Singapore</a></p></li>
-<li><p>fionaseah.com: <a href="https://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/">HISTORY: Closed and Merged Schools in Singapore (Part 4)</a>&nbsp;</p></li>
-<li><p>The Straits Times: <a href="https://www.straitstimes.com/singapore/education/new-names-of-merging-junior-colleges-to-be-combination-of-original-names">New names of merging junior colleges to be combination of original names</a></p></li>
-<li><p>The Asian Parent: <a href="https://sg.theasianparent.com/school-merger-in-singapore">School Merge in Singapore</a></p></li>
-</ul></li>
-<li><p>Finally, we re-categorised all education institutions into 3 categories (Primary, Secondary, Pre-tertiary) by manually editing their mainlevel_code attribute</p></li>
-</ol>
-</section>
-<section id="singapore-residents-by-planning-area-subzone" class="level3">
-<h3 class="anchored" data-anchor-id="singapore-residents-by-planning-area-subzone">Singapore Residents by Planning Area / Subzone</h3>
-<ol type="1">
-<li><p>As the <em>Singapore Residents by Planning Area / Subzone, Single Year of Age and Sex, June 2011-2020</em> file contains population data for all years from 2011-2020, we used SQL to extract population data from Year 2020.</p></li>
-<li><p>Next, we used SQL to extract only data from ages 7-18, which are the schooling years, before exporting this cleaned dataset into our GeoPackage.</p></li>
-</ol>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

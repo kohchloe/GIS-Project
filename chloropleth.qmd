@@ -1,0 +1,176 @@
+---
+title: "Preparation of Chloropleth Map"
+editor: visual
+---
+
+## Step 1. Loading the GIS Data
+
+Before you can start to perform any analysis, you need to load all the appropriate GIS data into QGIS.
+
+### Step 2. Masterplan 2019 Subzone
+
+We will first add our Masterplan 2019 Subzone into our GIS Layer, this will serve as the base map layer for our study. It contains polygons for the land spaces in Singapore.
+
+Hover over to **Layer tab** \> **Add Layer** \> **Add Vector Layer\...**
+
+Click **add vector layer** and you should be able to see the Data Source Manager \| Vector,  select the master-plan-2019-subzone-boundary-no-sea-geojson.geojson file.
+
+### Step 3. Residential Population Age and Sex 2000 to 2010 and 2011 to 2020
+
+This Data Layer provides the population of different age groups at different locations in Singapore in csv. File.
+
+Firstly, add in respopagesex2000to2010.csv and respopagesex2011to2020.csv, under **Layer tab** \> **Add Layer** \> **Add Delimited Text Layer**.
+
+Once you clicked on **Add Delimited Text Layer** you should see the **Data Source Manager \| Delimited Text**. You should search for respopagesex2000to2010.csv.
+
+After adding the csv file, it will appear under **Layers**. Repeat the same steps to open respopagesex2011to2020.csv.
+
+ 
+
+Before you can perform attribute query, you need to examine both respopagesex2000to2010.csv and respopagesex2011to2020.csv layers carefully and to identify the appropriate field and object name (s) to query.
+
+●  	At **Browser** pane, right-click on respopagesex2000to2010.
+
+●  	From the context menu, select **Open Attribute Table**.
+
+ 
+
+The Attribute Table window appears.
+
+In our study, we are only interested in finding the populations in year 2000, 2010 and 2020. Hence, we can filter out the desired data using the **Expression** icon.
+
+\
+\
+
+Now, you are going to enter the expression.
+
+●  	From the **Expression** pane, click on **\"=\"**  icon.
+
+Next, you are going to complete the query statement by providing the field value.
+
+●  	At the **Values** pane, click on the all unique button.
+
+Your screen should look similar to the figure below.
+
+![](https://lh6.googleusercontent.com/a2HrmlrN88dr8bA1scaLi0P2_0HsixSs_HMrXhFG5IBNq02IzSuiOoY2Mpzkn0e4xFcdZDOgGMQ13z4Z3Nqh1P-lt9DOcyDI1FmECIVDeTOyBznKhiqVs4KRmdjgfLDKYNppEfjS1xU7PgewZ1iBLIgIk5AI75YrjF3egi8OApb1hqP6NqQGb0PITvTdxw)
+
+Change the year accordingly to **2000 and 2010**.
+
+\
+
+After entering the query, click on **Select Features** and close the window. We will see that all the data with \"Time\" = \'2020\' selected only as shown below.
+
+\
+
+Close the attribute table and right click on the layer. Go to **Export** \> **Save Selected Features As**.. to save the layer with only 2020 values into a new GeoPackage layer.
+
+\
+
+We will name this exported layer as **Population2020**.
+
+![](https://lh5.googleusercontent.com/MIiiJGx-3xA_VLM7nd0sSq_nSC4ckjeIGPv2dDUyxzBxRB8eRVAXSIS5tKvVWyuDb772dFOyrbhgFC7XdxFCYJ4pzvkS9dDNJkRW6aL2xGbnvCPPwRjXbcUo2bGRsp9rjpY8bDhbCIW-JZAhPIv3Giij1oRO4YGcNFIDLmAliQUwrjL--H2exEyXHfSn9g)
+
+Repeat the steps to obtain the data for the 2000 and 2010 datasets.
+
+ 
+
+After exporting the layers, we should see them appear on the Layers tab as shown below. We can now remove the respopagesex2000to2010 and respopagesex2011to2020 layers.
+
+\
+
+### Step 4. Creating Virtual Layers
+
+Now that we have all the data that we need for analysis, we want to get the geographical distribution. We will do so by creating a virtual layer and using SQL statements to get the data to be shown on the map.
+
+ 
+
+**Layers** \> **Create Layer** \> **New Virtual Layer**
+
+![](https://lh6.googleusercontent.com/XAoqGy3gssD5y2NS1n7WCrJZsHYkySlBGh3jsYtNKynWdG7gqAXNIlnLIpjQQfHqARt5sco1FHiwxhW68B3UYQx2fpNYwA7x9nZkuDayYqameELQYaF1gNWmu4QlfZLJHmcQi3WiK20Gw66D_vwDPqRKBXzAc3vNdZ6_BvO7madZ9cihW6zTtJMZijJJHA)
+
+\
+
+We will create 6 different virtual layers, **Young_Population2020, Aged_Population2020, Young_Population2010, Aged_Population2010, Young_Population2000, Aged_Population2000**
+
+ ![](https://lh3.googleusercontent.com/9MiMRCqCT5odzVbcYrSfZehyD24KuBKfRvsn3as5M8H013msJLvbLDoC5S1AlG9dKPb_dezVb1Wyst7WGFzkCM_66BzQD22Ut7tiwjseeGSmANtuHktLvk5nytzC35TnSdhMRvbz_xjj2nzBDkB2BcchvwqT2d8h1fgtyGUOSVO2EBf_VycLIbemmgzYQg)
+
+Import the GeoPackage layers under **Embedded layers** and enter the following query in the **query** tab.
+
+\
+
+After adding, a new layer is created. To better understand, let\'s open the attribute table of this new layer. We see 2 new attributes created: PopYoung and PopSZ.
+
+\
+
+### Step 5. Creating Subzone Name attributes in Population Layers to do a join
+
+To do a Join, we need to find a common attribute between 2 tables. However, we notice that the column SZ in our Population layers are all in lowercase while that of the Subzone layers are in uppercase. Hence, we will add a new attribute in the population layers as SUBZONE.
+
+ 
+
+Right click on the layer name and select **Open Attribute Table** \> **Open Field Calculator**
+
+ 
+
+Fill in the **Output** field name as SUBZONE, output field type as **Text** and the following expression into **Expression** tab.
+
+![](https://lh6.googleusercontent.com/zXLPdPAWC7J4BmL23jLgiDqL-Hz7ELoubvsMLna_450mGG8JSWCpEad2QRlHPyeTgLYS8cQMbtCeKLbvOpFyIwkdaB-_tpFRonICv8jmInjuEBuKeFacF9RsZAjklerywJ8vGVR8O4Pq2focJeP2U0ALOzURobBw6S1HCZ9Ekl2SS7_rt9mJVfW5-tDOjw)
+
+After clicking **OK**, we see a new column SUBZONE created which is now in uppercase.
+
+\
+
+### Step 6. Join attributes to obtain the area for each population
+
+Now that all the required data are present, we can now perform a join. When we perform a join, we will join based on the common attributes that both layers have which in this case is **SUBZONE** of the population layers and **SUBZONE_N** of the subzone layers.
+
+ 
+
+Right click on the URA_MP19_SUBZONE_NO_SEA_PL layer \> **Properties..** \> **Joins**
+
+\
+
+·  	For the **Join layer**, we select the year that corresponds to the subzone layer used.
+
+·  	For the **Join field,** we select SUBZONE
+
+·  	For **Target field**, we select SUBZONE_N
+
+ 
+
+Then select **OK**. We will see the joined layer under the join tab.
+
+\
+
+### Step 7. Creating the Choropleth Map
+
+ 
+
+To create a choropleth map, right click on the Subzone layers where we performed the Join previously and select **Properties** \> **Symbology**
+
+**·  	Select Graduated from the dropdown box at the top**
+
+**·  	For the Value, select the PopAged column that we have obtained from the join.**
+
+**·  	For the Mode, we will be using Natural Breaks (Jenks).**
+
+**·  	For Classes, we will select 6. This is because we want to isolate the areas where there is 0 population, in other words, inhabitable. Hence, there will be a total of 5 ranges and an additional one to represent inhabitable areas.**
+
+**·  	We will change the colour of the inhabitable areas with range 0-1 to a distinct colour such as black so that we can easily distinguish it.**
+
+**·  	As for the Colour ramp, we will be selecting Blues.**
+
+**As we will be comparing across the different years, we need to standardize the ranges for our choropleth map for all maps. We will use the following values:**
+
+\
+\
+
+**These values have been selected as the largest value for all Aged population is 21452 and we want 5 classes, so we take the ranges of 21452/5. We will do the same for Young population to get the range.**
+
+**After clicking Apply and OK, we will get the map as shown below.**\
+\
+
+![](https://lh5.googleusercontent.com/NX9ISavak5lOvDZtlunTZtYT_v4C8o2xwUMzL3a5BpESQMP4xW_Wg8ICrVbNgQ3Uo7bBZFENTC035FWGckHQ3YB2aaxu2lQ7JJqZMEbMZ8B1VdUxtIEIkzuXl4qammg6wzFbuN_V7H4iVz7qcGHDeZCeqzELCBzVg7M_fORR7V-ZuppZ87FKYTwF1NF7Qg)![](https://lh5.googleusercontent.com/rKmaD4vdZZe0fW7d1CwWbbLoX_J4WBBVQjiKLvp9N6mSv9Gs2wwFU1BrOiyOkb4aV3r6we42uGZVKm1n3L3WvHeqqZP_j_fWTlc2x4hgp4U88J5Bbeb7BRuRxcTBaFEWP8aQ41sTOr6qOKysT_N88WLWyXhVhs51mtl2_ebeQqkrkuMNk1I4PTk8MYco7w)
+
+\
+

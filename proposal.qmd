@@ -17,11 +17,11 @@ We plan to conduct this by comparing the locations of schools and their accessib
 
 Our 2 research questions are as follows:
 
--   **Are there enough schools in the area to meet demands in different regions of Singapore?**
+1.  **Are there enough schools in the area to meet demands in different regions of Singapore?**
 
     -   Which areas have less schools and hence are less accessible which may potentially affect the choices of housing?
 
--   **How has the merging and closure of schools affected accessibility of schools to people?**
+2.  **How has the merging and closure of schools affected accessibility of schools to people?**
 
 ## Data
 

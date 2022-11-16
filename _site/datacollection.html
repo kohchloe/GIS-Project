@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>G2T5: MerGIS - Data Collection and Preparation</title>
+<title>G2T5: MerGIS - Data Collection</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -90,11 +90,19 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-data">    
         <li>
     <a class="dropdown-item" href="./datacollection.html">
- <span class="dropdown-text">Data Collection and Preparation</span></a>
+ <span class="dropdown-text">Data Collection</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./datapreparation.html">
  <span class="dropdown-text">Data Preparation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./chloropleth.html">
+ <span class="dropdown-text">Preparation of Chloropleth Map</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./accessibility.html">
+ <span class="dropdown-text">Preparation of Accessibility Map</span></a>
   </li>  
     </ul>
   </li>
@@ -116,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Data Collection and Preparation</h1>
+      <h1 class="quarto-secondary-nav-title">Data Collection</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -131,12 +139,22 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./datacollection.html" class="sidebar-item-text sidebar-link active">Data Collection and Preparation</a>
+  <a href="./datacollection.html" class="sidebar-item-text sidebar-link active">Data Collection</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./datapreparation.html" class="sidebar-item-text sidebar-link">Data Preparation</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chloropleth.html" class="sidebar-item-text sidebar-link">Preparation of Chloropleth Map</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./accessibility.html" class="sidebar-item-text sidebar-link">Preparation of Accessibility Map</a>
   </div>
 </li>
     </ul>
@@ -148,8 +166,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#collection-of-required-data" id="toc-collection-of-required-data" class="nav-link active" data-scroll-target="#collection-of-required-data">Collection of Required Data</a></li>
-  <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link" data-scroll-target="#data-preparation">Data Preparation</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
   </ul>
 </nav>
     </div>
@@ -158,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Data Collection and Preparation</h1>
+<h1 class="title d-none d-lg-block">Data Collection</h1>
 </div>
 
 
@@ -172,55 +189,35 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="collection-of-required-data" class="level2">
-<h2 class="anchored" data-anchor-id="collection-of-required-data">Collection of Required Data</h2>
-<p>The data sets that were used for this study are as follows:</p>
+<p>The data sets that were used for this study and their respective sources are as follows:</p>
 <table class="table">
-<colgroup>
-<col style="width: 17%">
-<col style="width: 54%">
-<col style="width: 27%">
-</colgroup>
+<thead>
+<tr class="header">
+<th><strong>File Name</strong></th>
+<th>Description</th>
+<th>Source</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
-<td><strong>File Name</strong></td>
-<td>Description</td>
-<td>Source</td>
-</tr>
-<tr class="even">
-<td>Education</td>
+<td>education (School Directory and Information)</td>
 <td>Provides information about primary schools, secondary schools and junior colleges.</td>
-<td>data.gov.sg</td>
-</tr>
-<tr class="odd">
-<td>Master Plan 2019 Subzone</td>
-<td></td>
-<td></td>
+<td><a href="https://data.gov.sg/dataset/school-directory-and-information">data.gov.sg</a></td>
 </tr>
 <tr class="even">
-<td>POP2020</td>
-<td>Provides multiple years of population data by age group as at June 2020.</td>
-<td>Department of Statistics (DOS), Singapore</td>
+<td>Master Plan 2019 Subzone Boundary (No Sea)</td>
+<td>Provides information about the Urban Redevelopment Authority’s (URA) regions, planning areas and subzones.</td>
+<td><a href="https://data.gov.sg/dataset/master-plan-2019-subzone-boundary-no-sea">data.gov.sg</a></td>
 </tr>
 <tr class="odd">
-<td></td>
-<td></td>
-<td></td>
+<td>POP2020 (Singapore Residents by Planning Area / Subzone, Single Year of Age and Sex, June 2011-2020)</td>
+<td>Provides multiple years of population data by age group as at June 2020.</td>
+<td><a href="https://www.singstat.gov.sg/find-data/search-by-theme/population/geographic-distribution/latest-data">Department of Statistics (DOS), Singapore</a></td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="data-preparation" class="level2">
-<h2 class="anchored" data-anchor-id="data-preparation">Data Preparation</h2>
-<ul>
-<li><p>education.csv was downloaded from Data.gov.sg and geocoded by using SLA OneMap Api.</p></li>
-<li><p>education.csv contains data of schools from 2021 onwards after the mergers and closures, hence we have to manipulate the data. Data is manipulated using information from the websites below:<br>
-</p></li>
-<li><p><a href="https://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/page/2/" class="uri">https://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/page/2/</a>&nbsp;</p></li>
-<li><p><a href="https://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/" class="uri">https://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/</a>&nbsp;</p></li>
-<li><p><a href="https://www.straitstimes.com/singapore/education/new-names-of-merging-junior-colleges-to-be-combination-of-original-names" class="uri">https://www.straitstimes.com/singapore/education/new-names-of-merging-junior-colleges-to-be-combination-of-original-names</a></p></li>
-<li><p><a href="https://sg.theasianparent.com/school-merger-in-singapore" class="uri">https://sg.theasianparent.com/school-merger-in-singapore</a></p></li>
-</ul>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
 
 
 </section>

@@ -27,6 +27,8 @@ website:
       contents: 
         - datacollection.qmd
         - datapreparation.qmd
+        - chloropleth.qmd
+        - accessibility.qmd
     - id: siteselection
       title: "Site Selection"
       style: "docked"

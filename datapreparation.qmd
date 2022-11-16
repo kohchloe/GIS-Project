@@ -1,6 +1,30 @@
 ---
-title: "Preparation of Chloropleth Map"
+title: "Data Preparation"
 editor: visual
 ---
 
-We merged the data.....
+### School Directory and Information 
+
+These are the steps we took to prepare the education.csv file for our QGIS artifact.
+
+1.  Firstly, to obtain the Longitude and Latitude of schools, education.csv was geocoded by using SLA OneMap Api.
+
+2.  Next, as education.csv only contained data of schools from 2021 after the mergers and closures, we manipulated the data by manually unmerging the schools and creating a new excel sheet for each year.
+
+    Data was manipulated using information from the following websites:
+
+    -   fionaseah.com: [HISTORY: Closed and Merged Schools in Singapore](https://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/page/2/ )
+
+    -   fionaseah.com: [HISTORY: Closed and Merged Schools in Singapore (Part 4)](https://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/) 
+
+    -   The Straits Times: [New names of merging junior colleges to be combination of original names](https://www.straitstimes.com/singapore/education/new-names-of-merging-junior-colleges-to-be-combination-of-original-names)
+
+    -   The Asian Parent: [School Merge in Singapore](https://sg.theasianparent.com/school-merger-in-singapore)
+
+3.  Finally, we re-categorised all education institutions into 3 categories (Primary, Secondary, Pre-tertiary) by manually editing their mainlevel_code attribute
+
+### Singapore Residents by Planning Area / Subzone
+
+1.  As the *Singapore Residents by Planning Area / Subzone, Single Year of Age and Sex, June 2011-2020* file contains population data for all years from 2011-2020, we used SQL to extract population data from Year 2020.
+
+2.  Next, we used SQL to extract only data from ages 7-18, which are the schooling years, before exporting this cleaned dataset into our GeoPackage.

@@ -6,7 +6,7 @@ MerGIS was brought forth as part of the SMT201 Geographical Information Systems 
 
 Due to the low birth rates and changing demographics in Singapore, the government has decided to merge different primary, secondary and tertiary schools so as to meet the demands of the changing population.
 
-This project aims to **find out the effect that school mergers in Singapore has on Singaporeans' accessibility to schools**. This is done by evaluating whether there are enough schools in each subzone and how the mergers can potentially affect people\'s choice of housing.
+This project aims to **find out the effect that school mergers in Singapore has on Singaporeans' accessibility to schools**. This is done by evaluating whether there are enough schools in each subzone and how the mergers can potentially affect people's choice of housing.
 
 Our findings have concluded that the merging of schools in Singapore has brought about an overall decrease in accessibility to schools for people. While the changes in accessibility are not very significant and only certain areas in Singapore have been affected by these mergers, they can have implications on costs and standard of living. This will be explored further in our report. 
 

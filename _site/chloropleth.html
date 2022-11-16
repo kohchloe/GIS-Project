@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>G2T5: MerGIS - Preparation of Chloropleth Map</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">G2T5: MerGIS</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./proposal.html">Proposal</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./poster.html">Poster</a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-data" role="button" data-bs-toggle="dropdown" aria-expanded="false">Data</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-data">    
+        <li>
+    <a class="dropdown-item" href="./datacollection.html">
+ <span class="dropdown-text">Data Collection</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./datapreparation.html">
+ <span class="dropdown-text">Data Preparation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./chloropleth.html">
+ <span class="dropdown-text">Preparation of Chloropleth Map</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./accessibility.html">
+ <span class="dropdown-text">Preparation of Accessibility Map</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./webmaps.html">Web Maps</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./report.html">Report</a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html">About</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Preparation of Chloropleth Map</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./datacollection.html" class="sidebar-item-text sidebar-link">Data Collection</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./datapreparation.html" class="sidebar-item-text sidebar-link">Data Preparation</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chloropleth.html" class="sidebar-item-text sidebar-link active">Preparation of Chloropleth Map</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./accessibility.html" class="sidebar-item-text sidebar-link">Preparation of Accessibility Map</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#step-1.-loading-the-gis-data" id="toc-step-1.-loading-the-gis-data" class="nav-link active" data-scroll-target="#step-1.-loading-the-gis-data">Step 1. Loading the GIS Data</a>
+  <ul class="collapse">
+  <li><a href="#step-2.-masterplan-2019-subzone" id="toc-step-2.-masterplan-2019-subzone" class="nav-link" data-scroll-target="#step-2.-masterplan-2019-subzone">Step 2. Masterplan 2019 Subzone</a></li>
+  <li><a href="#step-3.-residential-population-age-and-sex-2000-to-2010-and-2011-to-2020" id="toc-step-3.-residential-population-age-and-sex-2000-to-2010-and-2011-to-2020" class="nav-link" data-scroll-target="#step-3.-residential-population-age-and-sex-2000-to-2010-and-2011-to-2020">Step 3. Residential Population Age and Sex 2000 to 2010 and 2011 to 2020</a></li>
+  <li><a href="#step-4.-creating-virtual-layers" id="toc-step-4.-creating-virtual-layers" class="nav-link" data-scroll-target="#step-4.-creating-virtual-layers">Step 4. Creating Virtual Layers</a></li>
+  <li><a href="#step-5.-creating-subzone-name-attributes-in-population-layers-to-do-a-join" id="toc-step-5.-creating-subzone-name-attributes-in-population-layers-to-do-a-join" class="nav-link" data-scroll-target="#step-5.-creating-subzone-name-attributes-in-population-layers-to-do-a-join">Step 5. Creating Subzone Name attributes in Population Layers to do a join</a></li>
+  <li><a href="#step-6.-join-attributes-to-obtain-the-area-for-each-population" id="toc-step-6.-join-attributes-to-obtain-the-area-for-each-population" class="nav-link" data-scroll-target="#step-6.-join-attributes-to-obtain-the-area-for-each-population">Step 6. Join attributes to obtain the area for each population</a></li>
+  <li><a href="#step-7.-creating-the-choropleth-map" id="toc-step-7.-creating-the-choropleth-map" class="nav-link" data-scroll-target="#step-7.-creating-the-choropleth-map">Step 7. Creating the Choropleth Map</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Preparation of Chloropleth Map</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="step-1.-loading-the-gis-data" class="level2">
+<h2 class="anchored" data-anchor-id="step-1.-loading-the-gis-data">Step 1. Loading the GIS Data</h2>
+<p>Before you can start to perform any analysis, you need to load all the appropriate GIS data into QGIS.</p>
+<section id="step-2.-masterplan-2019-subzone" class="level3">
+<h3 class="anchored" data-anchor-id="step-2.-masterplan-2019-subzone">Step 2. Masterplan 2019 Subzone</h3>
+<p>We will first add our Masterplan 2019 Subzone into our GIS Layer, this will serve as the base map layer for our study. It contains polygons for the land spaces in Singapore.</p>
+<p>Hover over to <strong>Layer tab</strong> &gt; <strong>Add Layer</strong> &gt; <strong>Add Vector Layer...</strong></p>
+<p>Click <strong>add vector layer</strong> and you should be able to see the Data Source Manager | Vector,&nbsp; select the master-plan-2019-subzone-boundary-no-sea-geojson.geojson file.</p>
+</section>
+<section id="step-3.-residential-population-age-and-sex-2000-to-2010-and-2011-to-2020" class="level3">
+<h3 class="anchored" data-anchor-id="step-3.-residential-population-age-and-sex-2000-to-2010-and-2011-to-2020">Step 3. Residential Population Age and Sex 2000 to 2010 and 2011 to 2020</h3>
+<p>This Data Layer provides the population of different age groups at different locations in Singapore in csv. File.</p>
+<p>Firstly, add in respopagesex2000to2010.csv and respopagesex2011to2020.csv, under <strong>Layer tab</strong> &gt; <strong>Add Layer</strong> &gt; <strong>Add Delimited Text Layer</strong>.</p>
+<p>Once you clicked on <strong>Add Delimited Text Layer</strong> you should see the <strong>Data Source Manager | Delimited Text</strong>. You should search for respopagesex2000to2010.csv.</p>
+<p>After adding the csv file, it will appear under <strong>Layers</strong>. Repeat the same steps to open respopagesex2011to2020.csv.</p>
+<p>&nbsp;</p>
+<p>Before you can perform attribute query, you need to examine both respopagesex2000to2010.csv and respopagesex2011to2020.csv layers carefully and to identify the appropriate field and object name (s) to query.</p>
+<p>●&nbsp; At <strong>Browser</strong> pane, right-click on respopagesex2000to2010.</p>
+<p>●&nbsp; From the context menu, select <strong>Open Attribute Table</strong>.</p>
+<p>&nbsp;</p>
+<p>The Attribute Table window appears.</p>
+<p>In our study, we are only interested in finding the populations in year 2000, 2010 and 2020. Hence, we can filter out the desired data using the <strong>Expression</strong> icon.</p>
+<p><br>
+<br>
+</p>
+<p>Now, you are going to enter the expression.</p>
+<p>●&nbsp; From the <strong>Expression</strong> pane, click on <strong>"="</strong>&nbsp; icon.</p>
+<p>Next, you are going to complete the query statement by providing the field value.</p>
+<p>●&nbsp; At the <strong>Values</strong> pane, click on the all unique button.</p>
+<p>Your screen should look similar to the figure below.</p>
+<p><img src="https://lh6.googleusercontent.com/a2HrmlrN88dr8bA1scaLi0P2_0HsixSs_HMrXhFG5IBNq02IzSuiOoY2Mpzkn0e4xFcdZDOgGMQ13z4Z3Nqh1P-lt9DOcyDI1FmECIVDeTOyBznKhiqVs4KRmdjgfLDKYNppEfjS1xU7PgewZ1iBLIgIk5AI75YrjF3egi8OApb1hqP6NqQGb0PITvTdxw.png" class="img-fluid"></p>
+<p>Change the year accordingly to <strong>2000 and 2010</strong>.</p>
+<p><br>
+</p>
+<p>After entering the query, click on <strong>Select Features</strong> and close the window. We will see that all the data with "Time" = '2020' selected only as shown below.</p>
+<p><br>
+</p>
+<p>Close the attribute table and right click on the layer. Go to <strong>Export</strong> &gt; <strong>Save Selected Features As</strong>.. to save the layer with only 2020 values into a new GeoPackage layer.</p>
+<p><br>
+</p>
+<p>We will name this exported layer as <strong>Population2020</strong>.</p>
+<p><img src="https://lh5.googleusercontent.com/MIiiJGx-3xA_VLM7nd0sSq_nSC4ckjeIGPv2dDUyxzBxRB8eRVAXSIS5tKvVWyuDb772dFOyrbhgFC7XdxFCYJ4pzvkS9dDNJkRW6aL2xGbnvCPPwRjXbcUo2bGRsp9rjpY8bDhbCIW-JZAhPIv3Giij1oRO4YGcNFIDLmAliQUwrjL--H2exEyXHfSn9g.png" class="img-fluid"></p>
+<p>Repeat the steps to obtain the data for the 2000 and 2010 datasets.</p>
+<p>&nbsp;</p>
+<p>After exporting the layers, we should see them appear on the Layers tab as shown below. We can now remove the respopagesex2000to2010 and respopagesex2011to2020 layers.</p>
+<p><br>
+</p>
+</section>
+<section id="step-4.-creating-virtual-layers" class="level3">
+<h3 class="anchored" data-anchor-id="step-4.-creating-virtual-layers">Step 4. Creating Virtual Layers</h3>
+<p>Now that we have all the data that we need for analysis, we want to get the geographical distribution. We will do so by creating a virtual layer and using SQL statements to get the data to be shown on the map.</p>
+<p>&nbsp;</p>
+<p><strong>Layers</strong> &gt; <strong>Create Layer</strong> &gt; <strong>New Virtual Layer</strong></p>
+<p><img src="https://lh6.googleusercontent.com/XAoqGy3gssD5y2NS1n7WCrJZsHYkySlBGh3jsYtNKynWdG7gqAXNIlnLIpjQQfHqARt5sco1FHiwxhW68B3UYQx2fpNYwA7x9nZkuDayYqameELQYaF1gNWmu4QlfZLJHmcQi3WiK20Gw66D_vwDPqRKBXzAc3vNdZ6_BvO7madZ9cihW6zTtJMZijJJHA.png" class="img-fluid"></p>
+<p><br>
+</p>
+<p>We will create 6 different virtual layers, <strong>Young_Population2020, Aged_Population2020, Young_Population2010, Aged_Population2010, Young_Population2000, Aged_Population2000</strong></p>
+<p>&nbsp;<img src="https://lh3.googleusercontent.com/9MiMRCqCT5odzVbcYrSfZehyD24KuBKfRvsn3as5M8H013msJLvbLDoC5S1AlG9dKPb_dezVb1Wyst7WGFzkCM_66BzQD22Ut7tiwjseeGSmANtuHktLvk5nytzC35TnSdhMRvbz_xjj2nzBDkB2BcchvwqT2d8h1fgtyGUOSVO2EBf_VycLIbemmgzYQg.png" class="img-fluid"></p>
+<p>Import the GeoPackage layers under <strong>Embedded layers</strong> and enter the following query in the <strong>query</strong> tab.</p>
+<p><br>
+</p>
+<p>After adding, a new layer is created. To better understand, let's open the attribute table of this new layer. We see 2 new attributes created: PopYoung and PopSZ.</p>
+<p><br>
+</p>
+</section>
+<section id="step-5.-creating-subzone-name-attributes-in-population-layers-to-do-a-join" class="level3">
+<h3 class="anchored" data-anchor-id="step-5.-creating-subzone-name-attributes-in-population-layers-to-do-a-join">Step 5. Creating Subzone Name attributes in Population Layers to do a join</h3>
+<p>To do a Join, we need to find a common attribute between 2 tables. However, we notice that the column SZ in our Population layers are all in lowercase while that of the Subzone layers are in uppercase. Hence, we will add a new attribute in the population layers as SUBZONE.</p>
+<p>&nbsp;</p>
+<p>Right click on the layer name and select <strong>Open Attribute Table</strong> &gt; <strong>Open Field Calculator</strong></p>
+<p>&nbsp;</p>
+<p>Fill in the <strong>Output</strong> field name as SUBZONE, output field type as <strong>Text</strong> and the following expression into <strong>Expression</strong> tab.</p>
+<p><img src="https://lh6.googleusercontent.com/zXLPdPAWC7J4BmL23jLgiDqL-Hz7ELoubvsMLna_450mGG8JSWCpEad2QRlHPyeTgLYS8cQMbtCeKLbvOpFyIwkdaB-_tpFRonICv8jmInjuEBuKeFacF9RsZAjklerywJ8vGVR8O4Pq2focJeP2U0ALOzURobBw6S1HCZ9Ekl2SS7_rt9mJVfW5-tDOjw.png" class="img-fluid"></p>
+<p>After clicking <strong>OK</strong>, we see a new column SUBZONE created which is now in uppercase.</p>
+<p><br>
+</p>
+</section>
+<section id="step-6.-join-attributes-to-obtain-the-area-for-each-population" class="level3">
+<h3 class="anchored" data-anchor-id="step-6.-join-attributes-to-obtain-the-area-for-each-population">Step 6. Join attributes to obtain the area for each population</h3>
+<p>Now that all the required data are present, we can now perform a join. When we perform a join, we will join based on the common attributes that both layers have which in this case is <strong>SUBZONE</strong> of the population layers and <strong>SUBZONE_N</strong> of the subzone layers.</p>
+<p>&nbsp;</p>
+<p>Right click on the URA_MP19_SUBZONE_NO_SEA_PL layer &gt; <strong>Properties..</strong> &gt; <strong>Joins</strong></p>
+<p><br>
+</p>
+<p>·&nbsp; For the <strong>Join layer</strong>, we select the year that corresponds to the subzone layer used.</p>
+<p>·&nbsp; For the <strong>Join field,</strong> we select SUBZONE</p>
+<p>·&nbsp; For <strong>Target field</strong>, we select SUBZONE_N</p>
+<p>&nbsp;</p>
+<p>Then select <strong>OK</strong>. We will see the joined layer under the join tab.</p>
+<p><br>
+</p>
+</section>
+<section id="step-7.-creating-the-choropleth-map" class="level3">
+<h3 class="anchored" data-anchor-id="step-7.-creating-the-choropleth-map">Step 7. Creating the Choropleth Map</h3>
+<p>&nbsp;</p>
+<p>To create a choropleth map, right click on the Subzone layers where we performed the Join previously and select <strong>Properties</strong> &gt; <strong>Symbology</strong></p>
+<p><strong>·&nbsp; Select Graduated from the dropdown box at the top</strong></p>
+<p><strong>·&nbsp; For the Value, select the PopAged column that we have obtained from the join.</strong></p>
+<p><strong>·&nbsp; For the Mode, we will be using Natural Breaks (Jenks).</strong></p>
+<p><strong>·&nbsp; For Classes, we will select 6. This is because we want to isolate the areas where there is 0 population, in other words, inhabitable. Hence, there will be a total of 5 ranges and an additional one to represent inhabitable areas.</strong></p>
+<p><strong>·&nbsp; We will change the colour of the inhabitable areas with range 0-1 to a distinct colour such as black so that we can easily distinguish it.</strong></p>
+<p><strong>·&nbsp; As for the Colour ramp, we will be selecting Blues.</strong></p>
+<p><strong>As we will be comparing across the different years, we need to standardize the ranges for our choropleth map for all maps. We will use the following values:</strong></p>
+<p><br>
+<br>
+</p>
+<p><strong>These values have been selected as the largest value for all Aged population is 21452 and we want 5 classes, so we take the ranges of 21452/5. We will do the same for Young population to get the range.</strong></p>
+<p><strong>After clicking Apply and OK, we will get the map as shown below.</strong><br>
+<br>
+</p>
+<p><img src="https://lh5.googleusercontent.com/NX9ISavak5lOvDZtlunTZtYT_v4C8o2xwUMzL3a5BpESQMP4xW_Wg8ICrVbNgQ3Uo7bBZFENTC035FWGckHQ3YB2aaxu2lQ7JJqZMEbMZ8B1VdUxtIEIkzuXl4qammg6wzFbuN_V7H4iVz7qcGHDeZCeqzELCBzVg7M_fORR7V-ZuppZ87FKYTwF1NF7Qg.png" class="img-fluid"><img src="https://lh5.googleusercontent.com/rKmaD4vdZZe0fW7d1CwWbbLoX_J4WBBVQjiKLvp9N6mSv9Gs2wwFU1BrOiyOkb4aV3r6we42uGZVKm1n3L3WvHeqqZP_j_fWTlc2x4hgp4U88J5Bbeb7BRuRxcTBaFEWP8aQ41sTOr6qOKysT_N88WLWyXhVhs51mtl2_ebeQqkrkuMNk1I4PTk8MYco7w.png" class="img-fluid"></p>
+<p><br>
+</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
