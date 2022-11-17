@@ -3,4 +3,20 @@ title: "Report"
 editor: visual
 ---
 
-This is our report.
+As it was difficult to visualise the changes in population by looking at the chloropleth maps, our team plotted new maps to visualise the difference in population for each pair of consecutive years. We classified the values such that shades of red reflect an increase in population (e.g POP19 \> POP20) while shades of blue reflect a decrease (e.g POP19 \< POP20). Grey indicates that there was no change in population during the two years.
+
+Our analysis is as follows.
+
+### Comparing 2015 and 2017 Young Population
+
+![](https://lh5.googleusercontent.com/-yMl08cji7ZJ1O7CqPNEnhKXTESj42OaO1WuhuL2zJ4OqMyXS_MGQtVhigFc5UwPZo7pg79sqQnQoNLtH0LYs71xLTb63AFf7RrHsbYb0dPflMIvp-yXKSfN-cWvq4inJXPotkutZdRb5UuiExreBud-bdkKpldv6eeel61hy2M2nL9K50a5pnkker3bUQ)
+
+### Comparing 2019 and 2020 Young Population
+
+![Difference in Singapore's young population between 2019 and 2020](images/Diff%20between%202019%20and%202020%20(with%20schools).png)
+
+The areas that experienced an increase in population are Fernvale, Tampines North, Seletar, and Brickworks.
+
+On the other hands, the areas that experienced a decrease in population are Jurong West, Choa Chu Kang North, Midview, Bedok North, Tampines East, and Pasir Ris Drive.
+
+It is interesting to note that there are many schools cluttered around the areas demarcated red. This might explain the increase in population in these areas as parents would like to stay in these areas so that their children will live near school.

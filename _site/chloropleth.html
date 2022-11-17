@@ -171,12 +171,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#masterplan-2019-subzone" id="toc-masterplan-2019-subzone" class="nav-link" data-scroll-target="#masterplan-2019-subzone">1.1 Masterplan 2019 Subzone</a></li>
   <li><a href="#residential-population-age-and-sex-2000-to-2010-and-2011-to-2020" id="toc-residential-population-age-and-sex-2000-to-2010-and-2011-to-2020" class="nav-link" data-scroll-target="#residential-population-age-and-sex-2000-to-2010-and-2011-to-2020">1.2 Residential Population Age and Sex 2000 to 2010 and 2011 to 2020</a></li>
   </ul></li>
-  <li><a href="#creating-virtual-layers" id="toc-creating-virtual-layers" class="nav-link" data-scroll-target="#creating-virtual-layers">2. Creating Virtual Layers</a>
-  <ul class="collapse">
-  <li><a href="#step-3.-creating-subzone-name-attributes-in-population-layers-to-do-a-join" id="toc-step-3.-creating-subzone-name-attributes-in-population-layers-to-do-a-join" class="nav-link" data-scroll-target="#step-3.-creating-subzone-name-attributes-in-population-layers-to-do-a-join">Step 3. Creating Subzone Name attributes in Population Layers to do a join</a></li>
-  <li><a href="#step-4.-join-attributes-to-obtain-the-area-for-each-population" id="toc-step-4.-join-attributes-to-obtain-the-area-for-each-population" class="nav-link" data-scroll-target="#step-4.-join-attributes-to-obtain-the-area-for-each-population">Step 4. Join attributes to obtain the area for each population</a></li>
-  <li><a href="#step-5.-creating-the-choropleth-map" id="toc-step-5.-creating-the-choropleth-map" class="nav-link" data-scroll-target="#step-5.-creating-the-choropleth-map">Step 5. Creating the Choropleth Map</a></li>
-  </ul></li>
+  <li><a href="#creating-virtual-layers" id="toc-creating-virtual-layers" class="nav-link" data-scroll-target="#creating-virtual-layers">2. Creating Virtual Layers</a></li>
+  <li><a href="#creating-subzone-name-attributes-in-population-layers-to-do-a-join" id="toc-creating-subzone-name-attributes-in-population-layers-to-do-a-join" class="nav-link" data-scroll-target="#creating-subzone-name-attributes-in-population-layers-to-do-a-join">3. Creating Subzone Name attributes in Population Layers to do a join</a></li>
+  <li><a href="#join-attributes-to-obtain-the-area-for-each-population" id="toc-join-attributes-to-obtain-the-area-for-each-population" class="nav-link" data-scroll-target="#join-attributes-to-obtain-the-area-for-each-population">4. Join attributes to obtain the area for each population</a></li>
+  <li><a href="#creating-the-choropleth-map" id="toc-creating-the-choropleth-map" class="nav-link" data-scroll-target="#creating-the-choropleth-map">5. Creating the Choropleth Map</a></li>
   </ul>
 </nav>
     </div>
@@ -243,8 +241,9 @@ ul.task-list li input[type="checkbox"] {
 <p>&nbsp;<img src="https://lh3.googleusercontent.com/9MiMRCqCT5odzVbcYrSfZehyD24KuBKfRvsn3as5M8H013msJLvbLDoC5S1AlG9dKPb_dezVb1Wyst7WGFzkCM_66BzQD22Ut7tiwjseeGSmANtuHktLvk5nytzC35TnSdhMRvbz_xjj2nzBDkB2BcchvwqT2d8h1fgtyGUOSVO2EBf_VycLIbemmgzYQg.png" class="img-fluid"></p>
 <p>Import the GeoPackage layers under <strong>Embedded layers</strong> and enter the following query in the <strong>query</strong> tab.</p>
 <p>After adding, a new layer is created. To better understand, let's open the attribute table of this new layer. We see 2 new attributes created: PopYoung and PopSZ.</p>
-<section id="step-3.-creating-subzone-name-attributes-in-population-layers-to-do-a-join" class="level3">
-<h3 class="anchored" data-anchor-id="step-3.-creating-subzone-name-attributes-in-population-layers-to-do-a-join">Step 3. Creating Subzone Name attributes in Population Layers to do a join</h3>
+</section>
+<section id="creating-subzone-name-attributes-in-population-layers-to-do-a-join" class="level2">
+<h2 class="anchored" data-anchor-id="creating-subzone-name-attributes-in-population-layers-to-do-a-join">3. Creating Subzone Name attributes in Population Layers to do a join</h2>
 <p>To do a Join, we need to find a common attribute between 2 tables. However, we notice that the column SZ in our Population layers are all in lowercase while that of the Subzone layers are in uppercase. Hence, we will add a new attribute in the population layers as SUBZONE.</p>
 <p>&nbsp;</p>
 <p>Right click on the layer name and select <strong>Open Attribute Table</strong> &gt; <strong>Open Field Calculator</strong></p>
@@ -255,8 +254,8 @@ ul.task-list li input[type="checkbox"] {
 <p><br>
 </p>
 </section>
-<section id="step-4.-join-attributes-to-obtain-the-area-for-each-population" class="level3">
-<h3 class="anchored" data-anchor-id="step-4.-join-attributes-to-obtain-the-area-for-each-population">Step 4. Join attributes to obtain the area for each population</h3>
+<section id="join-attributes-to-obtain-the-area-for-each-population" class="level2">
+<h2 class="anchored" data-anchor-id="join-attributes-to-obtain-the-area-for-each-population">4. Join attributes to obtain the area for each population</h2>
 <p>Now that all the required data are present, we can now perform a join. When we perform a join, we will join based on the common attributes that both layers have, which in this case is <strong>SUBZONE</strong> of the population layers and <strong>SUBZONE_N</strong> of the subzone layers.</p>
 <p>&nbsp;</p>
 <p><img src="https://lh3.googleusercontent.com/MpGUqSEAMnoNawOf7-M48_2GXpoeSMQ9KkpJqfuU0d-t0vVHbi1QGRNZEltnzLsMtcraQNWoxmSL7LENgnkAH3yecJe-obH67P6Z-RR2riliYdggEW3aHsyOa_sYTNbBuXBEnfbPo6JnISDwsplMlxNbi1CIn2CIzPDaHwYonq5uxmHe_HCziHQ8NecE6w.png" class="img-fluid"></p>
@@ -268,8 +267,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Then select <strong>OK</strong>. We will see the joined layer under the join tab.</p>
 </section>
-<section id="step-5.-creating-the-choropleth-map" class="level3">
-<h3 class="anchored" data-anchor-id="step-5.-creating-the-choropleth-map">Step 5. Creating the Choropleth Map</h3>
+<section id="creating-the-choropleth-map" class="level2">
+<h2 class="anchored" data-anchor-id="creating-the-choropleth-map">5. Creating the Choropleth Map</h2>
 <p>To create a choropleth map, right click on the Subzone layers where we performed the Join previously and select <strong>Properties</strong> &gt; <strong>Symbology</strong></p>
 <p><img src="https://lh3.googleusercontent.com/Fd9LeJExpetW48a8gLKRurFvo2-yu8bp5uGft_AA7BraboaqM0fqwbta62y9tZmOvLR-GfMJPeC7jCJjA36IhG_oYhNbxBOOhKQryF62-iAG_fMrUS0l72PF5hQ569t-qYGpHrXdabxk4IgulbAn7esxt0tN9kphWkpf4E8KIa4w0UoV5E7TNS5CMRLpiw.png" class="img-fluid"></p>
 <ul>
@@ -290,12 +289,11 @@ ul.task-list li input[type="checkbox"] {
 <li><p>11860 - 17640</p></li>
 </ul>
 <p>These values have been selected as the largest value for all Young population is 17640 and we want 5 classes, so we take the ranges of 17640/5.</p>
-<p><em>To view our completed chloropleth maps for all 5 years, refer to the ‘Web Maps’ tab.</em><br>
+<p><em>To view our completed chloropleth maps for all 5 years, refer to the ‘Maps’ tab.</em><br>
 <br>
 </p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

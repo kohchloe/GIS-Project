@@ -11,7 +11,7 @@ website:
         text: "Poster"
       - sidebar:data
       - href: webmaps.qmd
-        text: "Web Maps"
+        text: "Maps"
       - href: report.qmd
         text: "Report"
     right:

@@ -11,4 +11,4 @@ We are Danelle, Jayme, and Chloe.
 
 In this website, we share our project findings and insights gained.
 
-Access our GitHub Repository here: \[github link\]*.*
+Access our GitHub Repository here: https://github.com/kohchloe/GIS-Project.git

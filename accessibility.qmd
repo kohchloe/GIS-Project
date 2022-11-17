@@ -2,3 +2,244 @@
 title: "Preparation of Accessibility Map"
 editor: visual
 ---
+
+## 1. Preparing base layer for the study area
+
+Download Master Plan 2014 Subzone Boundary from data.gov.sg and import it into QGIS. To do this, select **Layer** \> **Add layer** \> **Add vector layer**. 
+
+![](https://lh5.googleusercontent.com/wBMM_AVk64fLiq3XYDyGKWrbsJoZVWSl0TtBSlJZkktTFU8WWqyXBo636_xOhIeXDffTik7R6Y4XU9C6usXtv1QZnUlVBsdB1B0KpOqPwX87bhmHrTBfyY542eM9YD6FL5O1SeWzkO4BUCyBULF-7IjY4HjiHVeS3VfUVcYmi_Y-kUITOxqSTi_9D7pqMw)
+
+The **Data Source Manager** dialog window appears. For Vector Dataset(s), select MP14_SUBZONE_NO_SEA_PL.shp. 
+
+![](https://lh4.googleusercontent.com/9QIJ2RB2T0_YuIO4gSDzGe-32zwcZ1c-LKDhd0gmP_dGsoiZM4SJdWyxQ06RD3oxS2NDs3z3iJ60mUjKQ6u64hnIigfrZiGKy46MI51LCzilMJj8MCvCXIUSLdWtxGZPwYFQ5z3INUrRd5NU21TzeNYi5L1ILLRvXwgFE8vcpm5C8paWT4LvAF_4UX8lHA)
+
+Click **Add**. Click **Close**. 
+
+\
+
+Save the layer into GeoPackage format. Right click on the layer and select **Export** \> **Save Features As**.
+
+![](https://lh4.googleusercontent.com/bk8v94LNn_OKX73vUTqZI9SwOAs4VbiyLaaD-tawY0hD-VcleLzyLl1HqXmaj7JUnuVy6MgyYwSlQ_aC3nFEoxPsjdXKRDWFe0RswOXz6sXOz1E10lVS6f-QOc8LimsYwVscC8wmOmuVFISG2SpR0PzekYpPzziUoiE-up7_kt4j1RtPFZg_gmHGyv6_eQ)
+
+The **Save Vector Layer as** dialog window appears. For Format, select GeoPackage. For File name, select the SG GeoPackage you previously created. For Layer name, enter MP14. For CRS, select Project CRS: EPSG:3414 - SVY21. Your dialog window should look like the screenshot below. 
+
+![](https://lh6.googleusercontent.com/sPwsweg_299HNWQuVl6VYe9f3KpvEFEnUhfDqFKqd5EJWh5DScu2nQe-5kmk4HLd7VYMz6KcjFbrEaEtShaytCTQedYdpUEYQAKyoQGL1d9PTcbHXGkstBAkyd06APNGqKa7xoQI65TyFLauO-lI5QF-Vkd1opcTlKx-Xg4B9JqP4kSLK_v017joJ3PSXA)
+
+Click **OK**. Once the layer has been saved into the SG GeoPackage, you can remove the original layer. 
+
+\
+\
+
+## 2. Preparing schools layer 
+
+### 2.1 Importing data 
+
+Import the csv files for education into QGIS. You can start with the file for before the 2015 merger. Select **Layer** \> **Add Layer** \> **Add delimited text layer**. The **Data Source Manager** dialog window appears. Open the before merger (2015) CSV file. For Layer name, enter before merger (2015). Under Geometry Definition, select Point coordinates. For X field, select Longitude, and for Y field, select Latitude. For CRS, select EPSG:4326 - WGS 84. Your dialog window should look like the screenshot below. 
+
+![](https://lh5.googleusercontent.com/i3Lhgn6SsdmZctka_qE7YCrMc_Cyc8HfABDvKAWeT6dNi6_0HD-EtD-pulh7DsxiYSL74eGpdLX4udqQvLsKQuf_a9xW2PSqVyLXWKJO1XRSOXH8LpjB31VQ5nGvhdyyXLA0Oa7fr26EddRNd0Ny5S1spfJv1HNrodeNll1Yn5WpMVM1DyfcrGmXvgkcSA)
+
+Click **Add**. Click **Close**. 
+
+\
+
+Repeat these steps to import the CSVs for the other years -- before merger (2017), before merger (2019), and after merger (2019). 
+
+\
+
+### 2.2. Extracting data for respective school types 
+
+You will need to extract the data for each of the school types. For our study, we have decided to analyse 3 types -- primary schools, secondary schools, and pre-tertiary institutes (junior colleges and others -- such as polytechnics and international baccalaureate (IB) schools). 
+
+\
+
+Let\'s start with extracting the primary schools for each year. 
+
+\
+
+1.  Right click on before merger (2015) and select **Open Attribute Table**. Click on **Select features using an expression**. 
+
+2.  Click on the arrow in front of **Fields and Values**. Double click on **mainlevel_code**. 
+
+3.  Click on **=**. 
+
+4.  Click **All Unique**. Double click on **PRIMARY**. 
+
+5.  Your expression box should look like the screenshot below. 
+
+![](https://lh5.googleusercontent.com/WNm1iY_1YNkq2NCYYjNzlKO0Ou6zo7nIqmqvG5DzDowkCyy6GczS-04XBIzS1FyrFbRH5q80zZer9fekP9pXjOSc_eqfIdK-FkOKnkItW9TWs5puJ-bR4-MnYIwqCj9Xutyp4q5gtH0aDut3xAHu1ap-IZp1esrcDUwyZQh8joCBewLQHYds8cgVTQ0LwQ)
+
+6.  Click **Select Features**. Click **Close**. 
+
+7.  Right click on the layer and save selected features into the SG GeoPackage as bef15_pri. 
+
+\
+
+Repeat these steps above for before merger (2017) (as bef17_pri), before merger (2019) (as bef19_pri), and after merger (2019) (aft19_pri). 
+
+\
+
+Once you have extracted the primary schools for the 4 time periods, repeat these steps to extract secondary schools (with mainlevel_code = \'SECONDARY\') and pre-tertiary schools (with mainlevel_code = \'CENTRALISED INSTITUTE\' and \'JUNIOR COLLEGE\'). 
+
+\
+
+## 3. Extracting and preparing road network layer
+
+### 3.1 Selecting all road network within the study area 
+
+Firstly, we will need to import the roads layer from the OpenStreetMap dataset. Select **Layer** \> **Add Layer** \> **Add Vector Layer**. The **Data Source Manager** dialog window appears. Open the gis_osm_roads_free_1.shp file. 
+
+![](https://lh3.googleusercontent.com/UrSD4MYY-Ve7ncivlPxI0LFxn94vnk1Er_du6lgWLFEx6Gj6MnJbMo-2EN1J5JJ1zdOQ8WgFErxWsX46TvhlV4lKd4oYfpQUFQ3roTU8w-WsdFlPqQnEbrHoXZnsMlII-5hgvPsdTAlb82J7EV65ZzM6pjBKQEI5mSgcMzwDUEqbTVUV-vc_gXVYumAkYQ)
+
+Click **Add**. Click **Close**.
+
+\
+
+Select **Vector** \> **Geoprocessing Tools** \> **Clip**. 
+
+ ![](https://lh4.googleusercontent.com/5m3PR8Z1gGmzbO1Zjw1Cwmw9zOrkvFFRXmNA7HY0vwPCFDX2TIF-qBBSqUifq6j9VH_v6crWTyN4aEOOc84Qxds6DJBsfEyMXt3fFgWZ-uwBkPzGSc7x2OlF2--lPbqhzbeAyiEod2cYqaFCpgE39USI4eMFUB9si8gXcRR530PnmWNWN5Rt2cqwl_ZHGg)
+
+The **Clip** dialog window appears. For Input layer, select gis_osm_roads_free_1.shp. For Overlay, select MP14. Click on Advanced Options icon. For Invalid feature filtering, select Do not Filter (Better Performance). Your Clip dialog window should look like the screenshot below. When ready, click **Run**. 
+
+![](https://lh3.googleusercontent.com/sgDd0v4cJw_p6BD_BY06x0D85aIC-anUj8UqROkoS2cDoPlvkT_K_nCOoLQF19BFTlc7p16QPoQXPDhKYQeaP7x6P8dI58m840TrmB7AGza9-9kJC13DpxtXs2iuRVs6c2znQKtr1GaDvGyXFUOnOQjjutYofOcOiRzTW4F5i11sc1ibu99UUsx-1IFLEg)
+
+Once the clipped layer has been created, save it into the SG GeoPackage as all_roads. Once saved, remove gis_osm_roads_free_1.shp and the clipped layer. 
+
+\
+
+### 3.2. Extracting desired road networks
+
+For each of the school types, we will extract different types of roads. For primary schools, we will only be looking at walking paths. For secondary schools, we will be looking at both walking paths and motor vehicle road networks, For pre-tertiary institutes, we will also be looking at both walking paths and motor vehicle road networks. 
+
+\
+
+We will start with extracting the desired road network for primary schools. 
+
+\
+
+1.  Right click on all_roads which we just created, and select **Open Attribute Table**. Click on **Select features using an expression**. 
+
+2.  Click on the arrow in front of **Fields and Values**. Double click on **fclass**. 
+
+3.  Click on **=**. 
+
+4.  Click **All Unique**. Double click on **living_street**. 
+
+5.  Continue entering the different fclass types into the expression box to extract all the roads for walking paths. 
+
+```{=html}
+<!-- -->
+```
+8.  Your expression box should look like the screenshot below. 
+
+![](https://lh3.googleusercontent.com/IeNEc0CcZnW90DVCBrah7ORt-GzJi_G_qh9RFHyY7KWO4qyrlpBGAE5IkGqKka5W6WYo1aEGC9Io7VcbtmqN13FqOyxWz_2mGzJBXiLS_c1W4iF2FGcb0gZHPmDIkLn5qpJu43ReTW3KIV49gZqWiOfZ0kCFvTkQdQ72iKZDhyXLc2BbAIkUb-I4TGbucA)
+
+9.  Click **Select Features**. Click **Close**. 
+
+10. Right click on the layer and save selected features into the SG GeoPackage as roads_pri. 
+
+\
+
+For secondary schools and pre-tertiary institutes, the steps will be similar as before, except that we will be considering more types of roads. The expression box should look like the screenshot below. 
+
+![](https://lh4.googleusercontent.com/8SUs6OjbpR_7iFfwKRBfsBEbcGivfL2esKjbGfU_P9ZG-zkpciQ7Z0NakzpZ8p8u-nrhpJOPBSoi8h2vPcEXo5Vv4j6qBq9ZZKOqEWGUJ1_niGnkDC6EJwwxXv4jcRi14xXPDJPHvfyCIkjcGf-5OfkZaFfdFr4CNAenesvobDuhBfveU541GpSZjdRSzQ)
+
+\
+
+## 4. Analytical Hexagon 
+
+### 4.1. Creating hexagon layer
+
+Select **Vector** \> **Research Tools** \> **Create Grid**. The Create Grid dialog window appears.  For Grid type, select Hexagon (Polygon). For Grid extent, click on the dropdown and select Calculate from Layer. Select MP14. 
+
+![](https://lh3.googleusercontent.com/VUc8awf7yL7bB7JgQ7BZwKVyGiCdnr6MD5cM89OmPplLiREz9qtqikcLX8rtgg9n5BoTrTGlH0NbvR1bI4_zIx5eBW01cqQvBzXDpFs_7bGQkdRY_vevi5sp4tgVikiLu-A3R7oJT5SuchzZ9yPjKlkD_cQUQrHjPA1zbXuaSNuWXgGZoDOskAwrb9r1Og)
+
+For both Horizontal spacing and Vertical spacing, enter 500. For Grid CRS, select EPSG:3414 - SVY21. Your dialog window should look like the screenshot below. When ready, click **Run**. Click **Close**. A temporary layer called Grid is added on to the Layer pane. 
+
+![](https://lh5.googleusercontent.com/LiLiQPn0xXvF5041QpqK-V9FLlAYms8bq0HhC_zDMsesSSqy5EwDLl6NNl7yfjqEo228OYrnYvGrpNL1B38lh4lWHy7a3EuLg8yL7sfL1xJiHDVigIYeVeDuSLn_0yr8zje3Jc6qACPX_Q0iVDqzuswL4fCgboapmaS_wwViMrPRYrfMJfHMUW3YXKPbDg)
+
+\
+
+### 4.2. Editing and saving the hexagon layer
+
+Select **Vector** \> **GeoProcessing** \> **Clip**. For Input, select Grid. For Overlay, select MP14. Click on Advanced Options icon. For Invalid feature filtering, select Do not Filter (Better Performance). When ready, click **Run**. Once the clipped layer has been created, save it into the SG GeoPackage as hexagon14. Once saved, remove the Clipped layer and Grid layer. 
+
+### 4.3. Computing and saving the hexagon centroid
+
+Select **Vector** \> **Geometry Tools** \> **Centroid**. For Input layer, select hexagon14. When ready, click Run. Notice that a new temporary layer called Centroid is added onto Layers panel. Save the layer into SG GeoPackage as hex_centroid14. When done, remove the temporary Centroid layer. 
+
+\
+
+## 5. Network accessibility analysis with NEAT3
+
+### 5.1 Working with OD Matrix Tool
+
+Select **Processing** \> **Toolbox**. At the **Search** pane, type OD Matrix and select **OD Matrix from Layers as Table**. We will need to repeat this for each of the point layers for the different years. We can start with bef15_pri. Your dialog window should look like the screenshots below. 
+
+![](https://lh6.googleusercontent.com/ljnU-d2vwn2j4U6IwqciT-WgZPW-oKhazx-zWW8jYqpb9SnnLVKWkoW-SXIaWpOwsvOc17H0ubX62ggJ_ydO6piKlTQxflIIOrs7G6XhR2sB4LGtKvZEijAUEkWwrO79y01SxtTPsqUQZb1uF-F9NJ4jyh8wYRWy8BBwDoCX_LFieA-DjzynUVdiGXsllg)![](https://lh5.googleusercontent.com/e-pdVOsc9LgFslcUOcy9ne7e00tqDBBZw_QS0t458bz0CRVzPCXl28mI5oRTWby1u60sOZcKEZiMGs6nqVDXc0aho-hBL0v5d5Q5afUCItrvSNVuSHbdMYEJ6IF3HE_oFDoQAujhmhhZablF2wDAOuWH8YIyaMvHhOBNc5K34sAXfB9eM-tE1nU7H_S-_Q)
+
+When ready, click **Run**. 
+
+\
+
+When the process has been completed, save the OD Matrix into the SG GeoPackage as ODmatrix_bef15. You can remove the temporary layer. 
+
+\
+
+Repeat the above steps for bef17 (filename: ODmatrix_bef17), bef19 (filename: ODmatrix_bef19) and aft19 (filename: ODmatrix_aft19). 
+
+\
+
+### 5.2. Extracting shortest distance pairs
+
+Next, we will use the SQL tool of QGIS to select destination points with the shortest distance. At the **Search** pane of **Processing Toolbox**, type SQL. Double click on Execute SQL of Vector general. 
+
+\
+
+Let\'s start with ODmatrix_bef15. For **Additional input datasources**, select ODmatrix_bef15. We will repeat this for the other OD matrices later. In the SQL query box, enter the following statement: 
+
+\
+
+select fid, origin_id, destination_id, min(total_cost) as shortest_distance
+
+from input1 group by origin_id
+
+\
+
+For Geometry type, select No geometry. When ready, click **Run**. Notice that a temporary table called SQL Output is added into Layers panel. 
+
+\
+
+Right click on the SQL Output layer and **Open Attribute Table**. Select **Open Field Calculator** and select **Create a new field**. For Output field name, enter shortestdist_num. For Output field type, select Decimal number (real). For the Expression box, enter \"shortest_distance\". Click **OK** and save the changes made. 
+
+\
+
+Save the SQL output into the SG GeoPackage as shortestdist_bef15, and remove the temporary SQL output layer. 
+
+\
+
+Repeat this process for the other years, and save the layers as shortestdist_bef17, shortestdist_bef19 and shortestdist_aft19. 
+
+\
+
+### 5.3. Mapping accessibility values
+
+#### 5.3.1. Creating a duplicate layer 
+
+Before we continue, let us create a duplicate copy of hexagon14 layer. Right click on the layer and select Duplicate Layer. You can rename the layer as \"acc to pri bef15\". 
+
+####  5.3.2. Performing relational join
+
+Right click on the acc to pri bef15 layer. Select **Properties** \> **Joins** \> **Add**. For Join layer, select shortestdist_bef15. For Join field, select origin_id. For Target field, select fid. Your dialog window should look like the screenshot below. When ready, click **OK**. 
+
+![](https://lh3.googleusercontent.com/5dkr9Kxv8ApkZq4eAgxFmpdxk2ueAS9rR28wKr5pqS136z1GPkJY_tl2eAPN-BBQw6CNjZQBwFLQTDctRhSzSVUfruO4B48GB8xCCffn-8820EJWtfcv69ZCywPONx4CNUnPU2UKKJBu7vGJXTUj-bF-uGcOc6y9q2PvqK2ZPPGKT70STg7wr_6DfhoLkQ)
+
+####  5.3.3. Creating choropleth map 
+
+Right click on the acc to pri bef15 layer. Select **Properties** \> **Symbology**. Select Graduated. For Value, select shortestdist_bef15_shortestdist_num. Change the colour ramp to your preferred colour. For our map, we used blue and inverted the colour ramp. For Mode, select Equal Count (Quantile). Click **Classify**. Your dialog window should look like the screenshot below. 
+
+![](https://lh5.googleusercontent.com/e_I5C_tsepnx2FKGjW_DDfkTMLC2FUL9nWfRFcTV-vdprSOPRvH6pg-WqcgDmjBWaM-Ovhpp8AzGkZrwpXE_THqBAS4l74jiktFmt0MdUe3FFU1q7lFx8Ye2JzKK5hV4yaTJ2_XAKHx5nBfTaTN35Q5NnSOpxzuc5B1HWTTsIxQx0iXDi4ZUMQLWhwHt1Q)
+
+When done, click **Apply** and click **OK**. 
+
+\
+
