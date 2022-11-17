@@ -3,7 +3,7 @@ title: "Maps"
 editor: visual
 ---
 
-The following maps are the chloropleth maps our team generated for the five years
+The following maps are the chloropleth maps our team generated for the five years we considered. The in-depth analysis of these maps can be found in the 'Report' tab.
 
 ![Singapore's young population in 2014](images/2014.png)
 
@@ -11,10 +11,6 @@ The following maps are the chloropleth maps our team generated for the five year
 
 ![Singapore's young population in 2017](images/2017.png)
 
+![Singapore's young population in 2019](images/YoungPOP19-01.jpg)
+
 ![Singapore's young population in 2020](images/YoungPOP20.jpg)
-
-![Singapore's young population in 2019](images/mp19_youngpop2019.png)
-
-On the whole, primary and secondary schools are spread across Singapore, but subzones in the highest band (with 118960-17640 young people) have minimally one primary and secondary school each, within the area of the subzone. They generally also have more schools than in other subzones.
-
-Most of the pre-tertiary schools are clustered towards the central region of Singapore, but it does not have a direct correlation to the distribution of young. However, there is at least one pre-tertiary school in each region (e.g. West, North, East).

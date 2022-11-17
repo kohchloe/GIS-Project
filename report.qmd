@@ -3,6 +3,16 @@ title: "Report"
 editor: visual
 ---
 
+## Analysis of distribution of schools by population 
+
+![Singapore's young population in 2019](images/mp19_youngpop2019.png){alt="Singapore's young population in 2019"}
+
+On the whole, primary and secondary schools are spread across Singapore, but subzones in the highest band (with 118960-17640 young people) have minimally one primary and secondary school each, within the area of the subzone. They generally also have more schools than in other subzones.
+
+Most of the pre-tertiary schools are clustered towards the central region of Singapore, but it does not have a direct correlation to the distribution of young. However, there is at least one pre-tertiary school in each region (e.g. West, North, East).
+
+## Comparing young population throughout the years
+
 As it was difficult to visualise the changes in population by looking at the chloropleth maps, our team plotted new maps to visualise the difference in population for each pair of consecutive years. We classified the values such that shades of red reflect an increase in population (e.g POP19 \> POP20) while shades of blue reflect a decrease (e.g POP19 \< POP20). Grey indicates that there was no change in population during the two years.
 
 Our analysis is as follows.
