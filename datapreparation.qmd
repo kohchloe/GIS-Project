@@ -3,7 +3,7 @@ title: "Data Preparation"
 editor: visual
 ---
 
-### School Directory and Information 
+### School Directory and Information
 
 These are the steps we took to prepare the education.csv file for our QGIS artifact.
 
@@ -13,7 +13,7 @@ These are the steps we took to prepare the education.csv file for our QGIS artif
 
     Data was manipulated using information from the following websites:
 
-    -   fionaseah.com: [HISTORY: Closed and Merged Schools in Singapore](https://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/page/2/ )
+    -   fionaseah.com: [HISTORY: Closed and Merged Schools in Singapore](https://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/page/2/)
 
     -   fionaseah.com: [HISTORY: Closed and Merged Schools in Singapore (Part 4)](https://fionaseah.com/category/general-knowledge/closed-schools-in-singapore/) 
 
