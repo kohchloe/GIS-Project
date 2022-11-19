@@ -45,7 +45,7 @@ Next, you are going to complete the query statement by providing the field value
 
 Your screen should look similar to the figure below.
 
-![](https://lh6.googleusercontent.com/a2HrmlrN88dr8bA1scaLi0P2_0HsixSs_HMrXhFG5IBNq02IzSuiOoY2Mpzkn0e4xFcdZDOgGMQ13z4Z3Nqh1P-lt9DOcyDI1FmECIVDeTOyBznKhiqVs4KRmdjgfLDKYNppEfjS1xU7PgewZ1iBLIgIk5AI75YrjF3egi8OApb1hqP6NqQGb0PITvTdxw)
+![](images/chloropleth%201.jpg)
 
 Change the year accordingly to **2014, 2015, 2017, 2019, 2020**.
 
@@ -55,7 +55,7 @@ Close the attribute table and right click on the layer. Go to **Export** \> **Sa
 
 We will name this exported layer as **Population2014**.
 
-![](https://lh5.googleusercontent.com/MIiiJGx-3xA_VLM7nd0sSq_nSC4ckjeIGPv2dDUyxzBxRB8eRVAXSIS5tKvVWyuDb772dFOyrbhgFC7XdxFCYJ4pzvkS9dDNJkRW6aL2xGbnvCPPwRjXbcUo2bGRsp9rjpY8bDhbCIW-JZAhPIv3Giij1oRO4YGcNFIDLmAliQUwrjL--H2exEyXHfSn9g)
+![](images/chloropleth%202.jpg)
 
 Repeat the steps to obtain the data for the other years.
 
@@ -67,11 +67,11 @@ Now that we have all the data that we need for analysis, we want to get the geog
 
 **Layers** \> **Create Layer** \> **New Virtual Layer**
 
-![](https://lh6.googleusercontent.com/XAoqGy3gssD5y2NS1n7WCrJZsHYkySlBGh3jsYtNKynWdG7gqAXNIlnLIpjQQfHqARt5sco1FHiwxhW68B3UYQx2fpNYwA7x9nZkuDayYqameELQYaF1gNWmu4QlfZLJHmcQi3WiK20Gw66D_vwDPqRKBXzAc3vNdZ6_BvO7madZ9cihW6zTtJMZijJJHA)
+![](images/chloro3.jpg)
 
 We will create 5 different virtual layers, **Young_Population2014, Young_Population2015, Young_Population2017, Young_Population2019, Young_Population2020**
 
- ![](https://lh3.googleusercontent.com/9MiMRCqCT5odzVbcYrSfZehyD24KuBKfRvsn3as5M8H013msJLvbLDoC5S1AlG9dKPb_dezVb1Wyst7WGFzkCM_66BzQD22Ut7tiwjseeGSmANtuHktLvk5nytzC35TnSdhMRvbz_xjj2nzBDkB2BcchvwqT2d8h1fgtyGUOSVO2EBf_VycLIbemmgzYQg)
+![](images/chloro4.jpg)
 
 Import the GeoPackage layers under **Embedded layers** and enter the following query in the **query** tab.
 
@@ -89,7 +89,7 @@ Right click on the layer name and select **Open Attribute Table** \> **Open Fiel
 
 Fill in the **Output** field name as SUBZONE, output field type as **Text** and the following expression into **Expression** tab.
 
-![](https://lh6.googleusercontent.com/zXLPdPAWC7J4BmL23jLgiDqL-Hz7ELoubvsMLna_450mGG8JSWCpEad2QRlHPyeTgLYS8cQMbtCeKLbvOpFyIwkdaB-_tpFRonICv8jmInjuEBuKeFacF9RsZAjklerywJ8vGVR8O4Pq2focJeP2U0ALOzURobBw6S1HCZ9Ekl2SS7_rt9mJVfW5-tDOjw)
+![](images/chloro5.jpg)
 
 After clicking **OK**, we see a new column SUBZONE created which is now in uppercase.
 
@@ -99,9 +99,7 @@ After clicking **OK**, we see a new column SUBZONE created which is now in upper
 
 Now that all the required data are present, we can now perform a join. When we perform a join, we will join based on the common attributes that both layers have, which in this case is **SUBZONE** of the population layers and **SUBZONE_N** of the subzone layers.
 
- 
-
-![](https://lh3.googleusercontent.com/MpGUqSEAMnoNawOf7-M48_2GXpoeSMQ9KkpJqfuU0d-t0vVHbi1QGRNZEltnzLsMtcraQNWoxmSL7LENgnkAH3yecJe-obH67P6Z-RR2riliYdggEW3aHsyOa_sYTNbBuXBEnfbPo6JnISDwsplMlxNbi1CIn2CIzPDaHwYonq5uxmHe_HCziHQ8NecE6w)
+![](images/chloro6.jpg)
 
 Right click on the URA_MP19_SUBZONE_NO_SEA_PL layer \> **Properties..** \> **Joins**
 
@@ -117,7 +115,7 @@ Then select **OK**. We will see the joined layer under the join tab.
 
 To create a choropleth map, right click on the Subzone layers where we performed the Join previously and select **Properties** \> **Symbology**
 
-![](https://lh3.googleusercontent.com/Fd9LeJExpetW48a8gLKRurFvo2-yu8bp5uGft_AA7BraboaqM0fqwbta62y9tZmOvLR-GfMJPeC7jCJjA36IhG_oYhNbxBOOhKQryF62-iAG_fMrUS0l72PF5hQ569t-qYGpHrXdabxk4IgulbAn7esxt0tN9kphWkpf4E8KIa4w0UoV5E7TNS5CMRLpiw)
+![](images/chloro7.jpg)
 
 -   Select Graduated from the dropdown box at the top
 
