@@ -59,10 +59,6 @@ As it was difficult to visualise the changes in population by looking at the chl
 
 Our analysis is as follows.
 
-### Comparing 2014 and 2015 Young Population
-
-![](images/popn%20difference%202015%202014.jpg)
-
 ### Comparing 2015 and 2017 Young Population
 
 ![](images/popn%20difference%202017%202015.jpg)
