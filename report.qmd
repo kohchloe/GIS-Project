@@ -133,15 +133,13 @@ Hence, while there is an overall decrease in accessibility to secondary schools 
 
 \
 
-### Pre-tertiary Institutions 
+### Pre-tertiary Institutions
 
 ![](images/accesibility%20pre-merger.png)
 
 ![](images/accesibility%20post%20merger.png)
 
 In 2019, 4 pairs of Junior Colleges (JC) in different regions of Singapore were merged in response to the decreasing JC intake. Given that there were originally not many JCs and there was a considerable distance between the JCs for each pair before merger, this merger had a **greater decrease in accessibility** compared to primary and secondary schools. In the highlighted Area 1, Serangoon Junior College merged with Anderson Junior College, causing less accessibility in the Hougang subzone. The shortest distance from schools for students living in Hougang increased from the range 0-3034 to 3285-5396. 
-
-\
 
 Likewise, in the highlighted Area 2, Tampines Junior College merged with Meridian Junior College, causing accessibility in the Tampines subzone to decrease as the shortest distance from schools for students in this Area also increased from the range 0-3034 to 3285-5396.
 
@@ -158,4 +156,3 @@ That being said, these mergers may have underlying implications on costs and sta
 However, our group still believes that even though there was a decrease in accessibility, the changes were minimal, hence the equity of access to schools in Singapore is still maintained.
 
 \
-
