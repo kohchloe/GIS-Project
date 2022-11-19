@@ -27,15 +27,7 @@ website:
         - datapreparation.qmd
         - chloropleth.qmd
         - accessibility.qmd
-    - id: siteselection
-      title: "Site Selection"
-      style: "docked"
-      background: light
-      collapse-level: 2
-      contents: 
-        - mergers.qmd
-        - closures.qmd
-    
+
 format:
   html:
     theme: lux
