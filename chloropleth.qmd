@@ -45,7 +45,7 @@ Next, you are going to complete the query statement by providing the field value
 
 Your screen should look similar to the figure below.
 
-![](images/chloropleth%201.jpg)
+![](images/chloropleth%201-01.jpg)
 
 Change the year accordingly to **2014, 2015, 2017, 2019, 2020**.
 
@@ -55,7 +55,7 @@ Close the attribute table and right click on the layer. Go to **Export** \> **Sa
 
 We will name this exported layer as **Population2014**.
 
-![](images/chloropleth%202.jpg)
+![](images/chloropleth%202-01.jpg)
 
 Repeat the steps to obtain the data for the other years.
 
@@ -67,11 +67,11 @@ Now that we have all the data that we need for analysis, we want to get the geog
 
 **Layers** \> **Create Layer** \> **New Virtual Layer**
 
-![](images/chloro3.jpg)
+![](images/chloro3-01.jpg)
 
-We will create 5 different virtual layers, **Young_Population2014, Young_Population2015, Young_Population2017, Young_Population2019, Young_Population2020**
+We will create 5 different virtual layers, **Young_Population2014, Young_Population2015, Young_Population2017, Young_Population2019, Young_Population2020.**
 
-![](images/chloro4.jpg)
+![](images/chloro4-01.jpg)
 
 Import the GeoPackage layers under **Embedded layers** and enter the following query in the **query** tab.
 
@@ -89,7 +89,7 @@ Right click on the layer name and select **Open Attribute Table** \> **Open Fiel
 
 Fill in the **Output** field name as SUBZONE, output field type as **Text** and the following expression into **Expression** tab.
 
-![](images/chloro5.jpg)
+![](images/chloro5-01.jpg)
 
 After clicking **OK**, we see a new column SUBZONE created which is now in uppercase.
 
@@ -99,7 +99,7 @@ After clicking **OK**, we see a new column SUBZONE created which is now in upper
 
 Now that all the required data are present, we can now perform a join. When we perform a join, we will join based on the common attributes that both layers have, which in this case is **SUBZONE** of the population layers and **SUBZONE_N** of the subzone layers.
 
-![](images/chloro6-01.jpg)
+![](images/chloro6-02.jpg)
 
 Right click on the URA_MP19_SUBZONE_NO_SEA_PL layer \> **Properties..** \> **Joins**
 
@@ -115,7 +115,7 @@ Then select **OK**. We will see the joined layer under the join tab.
 
 To create a choropleth map, right click on the Subzone layers where we performed the Join previously and select **Properties** \> **Symbology**
 
-![](images/chloro7.jpg)
+![](images/chloro7-01.jpg)
 
 -   Select Graduated from the dropdown box at the top
 
