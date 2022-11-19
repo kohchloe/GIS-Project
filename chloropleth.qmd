@@ -99,7 +99,7 @@ After clicking **OK**, we see a new column SUBZONE created which is now in upper
 
 Now that all the required data are present, we can now perform a join. When we perform a join, we will join based on the common attributes that both layers have, which in this case is **SUBZONE** of the population layers and **SUBZONE_N** of the subzone layers.
 
-![](images/chloro6.jpg)
+![](images/chloro6-01.jpg)
 
 Right click on the URA_MP19_SUBZONE_NO_SEA_PL layer \> **Properties..** \> **Joins**
 
