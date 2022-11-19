@@ -247,7 +247,7 @@ ul.task-list li input[type="checkbox"] {
 <p>You will need to extract the data for each of the school types. For our study, we have decided to analyse 3 types – primary schools, secondary schools, and pre-tertiary institutes (junior colleges and others – such as polytechnics and international baccalaureate (IB) schools).&nbsp;</p>
 <p><br>
 </p>
-<p>Let's start with extracting the primary schools for each year.&nbsp;</p>
+<p>Let’s start with extracting the primary schools for each year.&nbsp;</p>
 <p><br>
 </p>
 <ol type="1">
@@ -267,7 +267,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Repeat these steps above for before merger (2017) (as bef17_pri), before merger (2019) (as bef19_pri), and after merger (2019) (aft19_pri).&nbsp;</p>
 <p><br>
 </p>
-<p>Once you have extracted the primary schools for the 4 time periods, repeat these steps to extract secondary schools (with mainlevel_code = 'SECONDARY') and pre-tertiary schools (with mainlevel_code = 'CENTRALISED INSTITUTE' and 'JUNIOR COLLEGE').&nbsp;</p>
+<p>Once you have extracted the primary schools for the 4 time periods, repeat these steps to extract secondary schools (with mainlevel_code = ‘SECONDARY’) and pre-tertiary schools (with mainlevel_code = ‘CENTRALISED INSTITUTE’ and ‘JUNIOR COLLEGE’).&nbsp;</p>
 <p><br>
 </p>
 </section>
@@ -364,7 +364,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Next, we will use the SQL tool of QGIS to select destination points with the shortest distance. At the <strong>Search</strong> pane of <strong>Processing Toolbox</strong>, type SQL. Double click on Execute SQL of Vector general.&nbsp;</p>
 <p><br>
 </p>
-<p>Let's start with ODmatrix_bef15. For <strong>Additional input datasources</strong>, select ODmatrix_bef15. We will repeat this for the other OD matrices later. In the SQL query box, enter the following statement:&nbsp;</p>
+<p>Let’s start with ODmatrix_bef15. For <strong>Additional input datasources</strong>, select ODmatrix_bef15. We will repeat this for the other OD matrices later. In the SQL query box, enter the following statement:&nbsp;</p>
 <p><br>
 </p>
 <p>select fid, origin_id, destination_id, min(total_cost) as shortest_distance</p>
@@ -374,7 +374,7 @@ ul.task-list li input[type="checkbox"] {
 <p>For Geometry type, select No geometry. When ready, click <strong>Run</strong>. Notice that a temporary table called SQL Output is added into Layers panel.&nbsp;</p>
 <p><br>
 </p>
-<p>Right click on the SQL Output layer and <strong>Open Attribute Table</strong>. Select <strong>Open Field Calculator</strong> and select <strong>Create a new field</strong>. For Output field name, enter shortestdist_num. For Output field type, select Decimal number (real). For the Expression box, enter "shortest_distance". Click <strong>OK</strong> and save the changes made.&nbsp;</p>
+<p>Right click on the SQL Output layer and <strong>Open Attribute Table</strong>. Select <strong>Open Field Calculator</strong> and select <strong>Create a new field</strong>. For Output field name, enter shortestdist_num. For Output field type, select Decimal number (real). For the Expression box, enter “shortest_distance”. Click <strong>OK</strong> and save the changes made.&nbsp;</p>
 <p><br>
 </p>
 <p>Save the SQL output into the SG GeoPackage as shortestdist_bef15, and remove the temporary SQL output layer.&nbsp;</p>
@@ -388,7 +388,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="mapping-accessibility-values">5.3. Mapping accessibility values</h3>
 <section id="creating-a-duplicate-layer" class="level4">
 <h4 class="anchored" data-anchor-id="creating-a-duplicate-layer">5.3.1. Creating a duplicate layer&nbsp;</h4>
-<p>Before we continue, let us create a duplicate copy of hexagon14 layer. Right click on the layer and select Duplicate Layer. You can rename the layer as "acc to pri bef15".&nbsp;</p>
+<p>Before we continue, let us create a duplicate copy of hexagon14 layer. Right click on the layer and select Duplicate Layer. You can rename the layer as “acc to pri bef15”.&nbsp;</p>
 </section>
 <section id="performing-relational-join" class="level4">
 <h4 class="anchored" data-anchor-id="performing-relational-join">5.3.2. Performing relational join</h4>

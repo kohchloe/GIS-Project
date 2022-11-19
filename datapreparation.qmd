@@ -21,7 +21,7 @@ These are the steps we took to prepare the education.csv file for our QGIS artif
 
     -   The Asian Parent: [School Merge in Singapore](https://sg.theasianparent.com/school-merger-in-singapore)
 
-3.  Finally, we re-categorised all education institutions into 3 categories (Primary, Secondary, Pre-tertiary) by manually editing their mainlevel_code attribute
+3.  Finally, we re-categorised all education institutions into 3 categories (Primary, Secondary, Pre-tertiary) by manually editing their mainlevel_code attribute.
 
 ### Singapore Residents by Planning Area / Subzone
 

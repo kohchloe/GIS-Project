@@ -10,10 +10,8 @@ website:
       - href: poster.qmd
         text: "Poster"
       - sidebar:data
-      - href: webmaps.qmd
-        text: "Maps"
       - href: report.qmd
-        text: "Report"
+        text: "Report & Maps"
     right:
       - href: about.qmd
         text: "About"
