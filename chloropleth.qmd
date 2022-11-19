@@ -27,9 +27,9 @@ After adding the csv file, it will appear under **Layers**. Repeat the same step
 
 Before you can perform attribute query, you need to examine both respopagesex2011to2020.csv layers carefully and to identify the appropriate field and object name (s) to query.
 
-●    At **Browser** pane, right-click on respopagesex2000to2010.
+●  At **Browser** pane, right-click on respopagesex2000to2010.
 
-●    From the context menu, select **Open Attribute Table**.
+●  From the context menu, select **Open Attribute Table**.
 
 The Attribute Table window appears.
 
@@ -37,11 +37,11 @@ In our study, we are only interested in finding the populations in year **2014, 
 
 Now, you are going to enter the expression.
 
-●    From the **Expression** pane, click on **\"=\"**  icon.
+●  From the **Expression** pane, click on **"="**  icon.
 
 Next, you are going to complete the query statement by providing the field value.
 
-●    At the **Values** pane, click on the all unique button.
+●  At the **Values** pane, click on the all unique button.
 
 Your screen should look similar to the figure below.
 
@@ -49,7 +49,7 @@ Your screen should look similar to the figure below.
 
 Change the year accordingly to **2014, 2015, 2017, 2019, 2020**.
 
-After entering the query, click on **Select Features** and close the window. We will see that all the data with \"Time\" = \'2014\' selected only as shown below.
+After entering the query, click on **Select Features** and close the window. We will see that all the data with "Time" = '2014' selected only as shown below.
 
 Close the attribute table and right click on the layer. Go to **Export** \> **Save Selected Features As**.. to save the layer with only 2014 values into a new GeoPackage layer.
 
@@ -75,7 +75,7 @@ We will create 5 different virtual layers, **Young_Population2014, Young_Populat
 
 Import the GeoPackage layers under **Embedded layers** and enter the following query in the **query** tab.
 
-After adding, a new layer is created. To better understand, let\'s open the attribute table of this new layer. We see 2 new attributes created: PopYoung and PopSZ.
+After adding, a new layer is created. To better understand, let's open the attribute table of this new layer. We see 2 new attributes created: PopYoung and PopSZ.
 
 ## 3. Creating Subzone Name attributes in Population Layers to do a join
 

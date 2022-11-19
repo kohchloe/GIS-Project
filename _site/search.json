@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "We are Danelle, Jayme, and Chloe.\n\n\n\nG2T5 at our Townhall Presentation\n\n\nIn this website, we share our project findings and insights gained.\nAccess our GitHub Repository here: [github link]."
+    "text": "We are Danelle, Jayme, and Chloe.\n\n\n\nG2T5 at our Townhall Presentation\n\n\nIn this website, we share our project findings and insights gained.\nAccess our GitHub Repository here: https://github.com/kohchloe/GIS-Project.git"
   },
   {
     "objectID": "datacollection.html",
@@ -18,7 +18,7 @@
     "href": "datapreparation.html",
     "title": "Data Preparation",
     "section": "",
-    "text": "Singapore Residents by Planning Area / Subzone\n\nAs the Singapore Residents by Planning Area / Subzone, Single Year of Age and Sex, June 2011-2020 file contains population data for all years from 2011-2020, we used SQL to extract population data from Year 2020.\nNext, we used SQL to extract only data from ages 7-18, which are the schooling years, before exporting this cleaned dataset into our GeoPackage."
+    "text": "Singapore Residents by Planning Area / Subzone\n\nAs the Singapore Residents by Planning Area / Subzone, Single Year of Age and Sex, June 2011-2020 file contains population data for all years from 2011-2020, we used SQL to extract population data from Year 2020.\nNext, we used SQL to extract only data from ages 7-18, which are the schooling years, before exporting this cleaned dataset into our GeoPackage.\n\n\n\nOSM Road Network\nOur study was based on the assumption that students have different means of transportation depending on which education level they belong to. Hence, we extracted different road types from the OSM Road Network for each level.\n\nFor primary schools, we only looked at walking paths.\nFor secondary schools, we will be looking at both walking paths and motor vehicle road networks.\nFor pre-tertiary institutes, we will also be looking at both walking paths and motor vehicle road networks. \n\nThe detailed step-by-step guide can be found in the ‘Data: Preparation of Accessibility Map’ tab."
   },
   {
     "objectID": "index.html",

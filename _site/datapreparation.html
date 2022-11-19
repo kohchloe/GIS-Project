@@ -168,6 +168,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#school-directory-and-information" id="toc-school-directory-and-information" class="nav-link active" data-scroll-target="#school-directory-and-information">School Directory and Information</a></li>
   <li><a href="#singapore-residents-by-planning-area-subzone" id="toc-singapore-residents-by-planning-area-subzone" class="nav-link" data-scroll-target="#singapore-residents-by-planning-area-subzone">Singapore Residents by Planning Area / Subzone</a></li>
+  <li><a href="#osm-road-network" id="toc-osm-road-network" class="nav-link" data-scroll-target="#osm-road-network">OSM Road Network</a></li>
   </ul>
 </nav>
     </div>
@@ -212,6 +213,16 @@ ul.task-list li input[type="checkbox"] {
 <li><p>As the <em>Singapore Residents by Planning Area / Subzone, Single Year of Age and Sex, June 2011-2020</em> file contains population data for all years from 2011-2020, we used SQL to extract population data from Year 2020.</p></li>
 <li><p>Next, we used SQL to extract only data from ages 7-18, which are the schooling years, before exporting this cleaned dataset into our GeoPackage.</p></li>
 </ol>
+</section>
+<section id="osm-road-network" class="level3">
+<h3 class="anchored" data-anchor-id="osm-road-network">OSM Road Network</h3>
+<p>Our study was based on the assumption that students have different means of transportation depending on which education level they belong to. Hence, we extracted different road types from the OSM Road Network for each level.</p>
+<ol type="1">
+<li>For primary schools, we only looked at walking paths.</li>
+<li>For secondary schools, we will be looking at both walking paths and motor vehicle road networks.</li>
+<li>For pre-tertiary institutes, we will also be looking at both walking paths and motor vehicle road networks.&nbsp;</li>
+</ol>
+<p>The detailed step-by-step guide can be found in the ‘Data: Preparation of Accessibility Map’ tab.</p>
 
 
 </section>

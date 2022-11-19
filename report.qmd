@@ -3,7 +3,7 @@ title: "Report"
 editor: visual
 ---
 
-## Analysis of distribution of schools by population 
+## Analysis of distribution of schools by population
 
 ![Singapore's young population in 2019](images/mp19_youngpop2019.png){alt="Singapore's young population in 2019"}
 

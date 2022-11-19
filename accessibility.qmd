@@ -52,7 +52,7 @@ You will need to extract the data for each of the school types. For our study, w
 
 \
 
-Let\'s start with extracting the primary schools for each year. 
+Let's start with extracting the primary schools for each year. 
 
 \
 
@@ -78,7 +78,7 @@ Repeat these steps above for before merger (2017) (as bef17_pri), before merger 
 
 \
 
-Once you have extracted the primary schools for the 4 time periods, repeat these steps to extract secondary schools (with mainlevel_code = \'SECONDARY\') and pre-tertiary schools (with mainlevel_code = \'CENTRALISED INSTITUTE\' and \'JUNIOR COLLEGE\'). 
+Once you have extracted the primary schools for the 4 time periods, repeat these steps to extract secondary schools (with mainlevel_code = 'SECONDARY') and pre-tertiary schools (with mainlevel_code = 'CENTRALISED INSTITUTE' and 'JUNIOR COLLEGE'). 
 
 \
 
@@ -126,9 +126,8 @@ We will start with extracting the desired road network for primary schools. 
 
 5.  Continue entering the different fclass types into the expression box to extract all the roads for walking paths. 
 
-```{=html}
 <!-- -->
-```
+
 8.  Your expression box should look like the screenshot below. 
 
 ![](https://lh3.googleusercontent.com/IeNEc0CcZnW90DVCBrah7ORt-GzJi_G_qh9RFHyY7KWO4qyrlpBGAE5IkGqKka5W6WYo1aEGC9Io7VcbtmqN13FqOyxWz_2mGzJBXiLS_c1W4iF2FGcb0gZHPmDIkLn5qpJu43ReTW3KIV49gZqWiOfZ0kCFvTkQdQ72iKZDhyXLc2BbAIkUb-I4TGbucA)
@@ -195,7 +194,7 @@ Next, we will use the SQL tool of QGIS to select destination points with the sho
 
 \
 
-Let\'s start with ODmatrix_bef15. For **Additional input datasources**, select ODmatrix_bef15. We will repeat this for the other OD matrices later. In the SQL query box, enter the following statement: 
+Let's start with ODmatrix_bef15. For **Additional input datasources**, select ODmatrix_bef15. We will repeat this for the other OD matrices later. In the SQL query box, enter the following statement: 
 
 \
 
@@ -209,7 +208,7 @@ For Geometry type, select No geometry. When ready, click **Run**. Notice that a 
 
 \
 
-Right click on the SQL Output layer and **Open Attribute Table**. Select **Open Field Calculator** and select **Create a new field**. For Output field name, enter shortestdist_num. For Output field type, select Decimal number (real). For the Expression box, enter \"shortest_distance\". Click **OK** and save the changes made. 
+Right click on the SQL Output layer and **Open Attribute Table**. Select **Open Field Calculator** and select **Create a new field**. For Output field name, enter shortestdist_num. For Output field type, select Decimal number (real). For the Expression box, enter "shortest_distance". Click **OK** and save the changes made. 
 
 \
 
@@ -225,15 +224,15 @@ Repeat this process for the other years, and save the layers as shortestdist_bef
 
 #### 5.3.1. Creating a duplicate layer 
 
-Before we continue, let us create a duplicate copy of hexagon14 layer. Right click on the layer and select Duplicate Layer. You can rename the layer as \"acc to pri bef15\". 
+Before we continue, let us create a duplicate copy of hexagon14 layer. Right click on the layer and select Duplicate Layer. You can rename the layer as "acc to pri bef15". 
 
-####  5.3.2. Performing relational join
+#### 5.3.2. Performing relational join
 
 Right click on the acc to pri bef15 layer. Select **Properties** \> **Joins** \> **Add**. For Join layer, select shortestdist_bef15. For Join field, select origin_id. For Target field, select fid. Your dialog window should look like the screenshot below. When ready, click **OK**. 
 
 ![](https://lh3.googleusercontent.com/5dkr9Kxv8ApkZq4eAgxFmpdxk2ueAS9rR28wKr5pqS136z1GPkJY_tl2eAPN-BBQw6CNjZQBwFLQTDctRhSzSVUfruO4B48GB8xCCffn-8820EJWtfcv69ZCywPONx4CNUnPU2UKKJBu7vGJXTUj-bF-uGcOc6y9q2PvqK2ZPPGKT70STg7wr_6DfhoLkQ)
 
-####  5.3.3. Creating choropleth map 
+#### 5.3.3. Creating choropleth map 
 
 Right click on the acc to pri bef15 layer. Select **Properties** \> **Symbology**. Select Graduated. For Value, select shortestdist_bef15_shortestdist_num. Change the colour ramp to your preferred colour. For our map, we used blue and inverted the colour ramp. For Mode, select Equal Count (Quantile). Click **Classify**. Your dialog window should look like the screenshot below. 
 
@@ -242,4 +241,3 @@ Right click on the acc to pri bef15 layer. Select **Properties** \> **Symbology*
 When done, click **Apply** and click **OK**. 
 
 \
-
