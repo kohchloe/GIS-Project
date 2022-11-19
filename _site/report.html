@@ -63,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -119,10 +119,44 @@ ul.task-list li input[type="checkbox"] {
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Report &amp; Maps</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./datacollection.html" class="sidebar-item-text sidebar-link">Data Collection</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./datapreparation.html" class="sidebar-item-text sidebar-link">Data Preparation</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chloropleth.html" class="sidebar-item-text sidebar-link">Preparation of Chloropleth Map</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./accessibility.html" class="sidebar-item-text sidebar-link">Preparation of Accessibility Map</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -149,7 +183,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#secondary-schools" id="toc-secondary-schools" class="nav-link" data-scroll-target="#secondary-schools">Secondary Schools</a></li>
   <li><a href="#pre-tertiary-institutions" id="toc-pre-tertiary-institutions" class="nav-link" data-scroll-target="#pre-tertiary-institutions">Pre-tertiary Institutions</a></li>
   </ul></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -158,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Report &amp; Maps</h1>
+<h1 class="title d-none d-lg-block">Report &amp; Maps</h1>
 </div>
 
 
@@ -312,14 +346,11 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/accesibility%20pre-merger.png" class="img-fluid"></p>
 <p><img src="images/accesibility%20post%20merger.png" class="img-fluid"></p>
 <p>In 2019, 4 pairs of Junior Colleges (JC) in different regions of Singapore were merged in response to the decreasing JC intake. Given that there were originally not many JCs and there was a considerable distance between the JCs for each pair before merger, this merger had a <strong>greater decrease in accessibility</strong> compared to primary and secondary schools. In the highlighted Area 1, Serangoon Junior College merged with Anderson Junior College, causing less accessibility in the Hougang subzone. The shortest distance from schools for students living in Hougang increased from the range 0-3034 to 3285-5396.&nbsp;</p>
-<p><br>
-</p>
 <p>Likewise, in the highlighted Area 2, Tampines Junior College merged with Meridian Junior College, causing accessibility in the Tampines subzone to decrease as the shortest distance from schools for students in this Area also increased from the range 0-3034 to 3285-5396.</p>
 </section>
 </section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
-<p>Conclusion</p>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
 <p>In conclusion, the merging of schools in Singapore has brought about an overall decrease in accessibility to schools across Singapore. However, while there was a decrease in accessibility, this change is still minimal as schools that were merged were in close proximity to one another. Should the government need to merge more schools, it would be advisable to continue merging schools that are already in close proximity. The impact of merging schools that are further apart from one another can be observed from the merger of pre-tertiary institutions. However, we acknowledge that as people get older (e.g.&nbsp;primary school students vs pre-tertiary students), they are likely to be more willing to travel a longer distance.&nbsp;</p>
 <p><br>
 </p>

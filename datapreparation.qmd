@@ -37,4 +37,4 @@ Our study was based on the assumption that students have different means of tran
 2.  For secondary schools, we will be looking at both walking paths and motor vehicle road networks.
 3.  For pre-tertiary institutes, we will also be looking at both walking paths and motor vehicle road networks. 
 
-The detailed step-by-step guide can be found in the 'Data: Preparation of Accessibility Map' tab.
+*The detailed step-by-step guide can be found in the 'Data: Preparation of Accessibility Map' tab.*

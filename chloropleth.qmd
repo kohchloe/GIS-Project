@@ -145,5 +145,5 @@ As we will be comparing across the different years, we need to standardize the r
 
 These values have been selected as the largest value for all Young population is 17640 and we want 5 classes, so we take the ranges of 17640/5.
 
-*To view our completed chloropleth maps for all 5 years, refer to the 'Maps' tab.*\
+*To view our completed chloropleth maps for all 5 years, refer to the 'Report & Maps' tab.*\
 \
