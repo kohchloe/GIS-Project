@@ -8,6 +8,5 @@ Due to the low birth rates and changing demographics in Singapore, the governmen
 
 This project aims to **find out the effect that school mergers in Singapore has on Singaporeans' accessibility to schools**. This is done by evaluating whether there are enough schools in each subzone and how the mergers can potentially affect people's choice of housing.
 
-Our findings have concluded that the merging of schools in Singapore has brought about an overall decrease in accessibility to schools for people. While the changes in accessibility are not very significant and only certain areas in Singapore have been affected by these mergers, they can have implications on costs and standard of living. This will be explored further in our report. 
-
+Our findings have concluded that the merger of schools in Singapore does not have significant impacts on equity of access to schools. However, the merger of pre tertiary institutions has the most significant impact compared to other school types. This will be explored further in our report. 
 \
