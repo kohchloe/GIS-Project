@@ -15,7 +15,7 @@ Hover over to **Layer tab** \> **Add Layer** \> **Add Vector Layer\...**
 
 Click **add vector layer** and you should be able to see the Data Source Manager \| Vector,  select the master-plan-2019-subzone-boundary-no-sea-geojson.geojson file.
 
-### 1.2 Residential Population Age and Sex 2000 to 2010 and 2011 to 2020
+### 1.2 Residential Population Age and Sex 2011 to 2020
 
 This Data Layer provides the population of different age groups at different locations in Singapore in csv. File.
 
@@ -145,5 +145,5 @@ As we will be comparing across the different years, we need to standardize the r
 
 These values have been selected as the largest value for all Young population is 17640 and we want 5 classes, so we take the ranges of 17640/5.
 
-*To view our completed chloropleth maps for all 5 years, refer to the 'Report & Maps' tab.*\
+*To view our completed chloropleth maps for all 5 years, refer to the 'Results and Discussion' tab.*\
 \

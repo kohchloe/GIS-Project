@@ -6,27 +6,22 @@ website:
   navbar:
     left: 
       - href: proposal.html
-        text: "Proposal"
-      - href: poster.qmd
-        text: "Poster"
-      - sidebar:data
-      - href: report.qmd
-        text: "Report & Maps"
-    right:
-      - href: about.qmd
-        text: "About"
-    
-  sidebar:
-    - id: data
-      title: "Data"
-      style: "docked"
-      background: light
-      collapse-level: 2
-      contents: 
+        text: "Project Proposal"
+      - text: "Methodology"
+        menu:
         - datacollection.qmd
         - datapreparation.qmd
         - chloropleth.qmd
         - accessibility.qmd
+      - href: report.qmd
+        text: "Results & Discussion"
+      - href: conclusion.qmd
+        text: "Lessons Learnt"
+      - href: poster.qmd
+        text: "Poster"
+    right:
+      - href: about.qmd
+        text: "About"
 
 format:
   html:

@@ -245,3 +245,4 @@ Right click on the acc to pri bef15 layer. Select **Properties** \> **Symbology*
 When done, click **Apply** and click **OK**. 
 
 \
+*To view our completed accessibility maps for primary schools, secondary schools, and pre-tertiary instituitions, refer to the 'Results and Discussion' tab.*

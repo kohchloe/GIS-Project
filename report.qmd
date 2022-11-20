@@ -1,11 +1,11 @@
 ---
-title: "Report & Maps"
+title: "Results & Discussion"
 editor: visual
 ---
 
 ## Singapore's young population
 
-The following maps are the chloropleth maps our team generated for the five years we considered. The in-depth analysis of these maps can be found in the 'Report' tab.
+The following maps are the chloropleth maps our team generated for the five years we considered.
 
 ### Singapore's young population in 2014
 
@@ -91,13 +91,17 @@ In the East, there were two pairs of primary schools that were merged in 2019 --
 
 ### Primary Schools
 
+![]()
+
 ![](images/pri%20sch%20acc%20before%202015.jpg)
 
-![](images/pri%20sch%20acc%20before%202019.jpg)
+![](images/%5Blabelled%5D%20pri%20sch%20acc%20before%202019.png)
 
-![](images/pri%20sch%20acc%20after%202019.jpg)
+![](images/%5Blabelled%5D%20pri%20sch%20acc%20after%202019.png)
 
-Amongst the years we analysed, the merger of primary schools in 2019 resulted in the greatest change in accessibility, with 7 pairs of primary schools being merged, whereas only 4 pairs of primary schools were merged in 2015. No primary schools were merged in 2017. Hence, we will be focusing our analysis on the 2019 merger. Even in 2019, the **change in accessibility was not very significant** as we realised that the primary schools that were merged together were usually done for schools in close proximity. The quantile values for shortest distance are also mostly unchanged, with the only exception being the first band. In the highlighted Area 1, Balestier Hill Primary School and Bendemeer Primary School were merged together. With this merger, the accessibility in the surrounding areas decreased slightly. One example of how the shortest distance changed, was from 1628m to 2479m. 
+Amongst the years we analysed, the merger of primary schools in 2019 resulted in the greatest change in accessibility, with 7 pairs of primary schools being merged, whereas only 4 pairs of primary schools were merged in 2015. No primary schools were merged in 2017. Hence, we will be focusing our analysis on the 2019 merger. Even in 2019, the **change in accessibility was not very significant** as we realised that the primary schools that were merged together were usually done for schools in close proximity. The quantile values for shortest distance are also mostly unchanged, with the only exception being the first band.
+
+In the highlighted Area 1, Balestier Hill Primary School and Bendemeer Primary School were merged together. With this merger, the accessibility in the surrounding areas decreased slightly. One example of how the shortest distance changed, was from 1628m to 2479m. 
 
 \
 
@@ -111,9 +115,9 @@ Overall, although the accessibility to primary schools decreased, the equity of 
 
 ### Secondary Schools
 
-![](images/sec%20sch%20acc%20before%202015.jpg)
+![](images/%5Blabelled%5D%20sec%20sch%20acc%20before%202015.png)
 
-![](images/sec%20sch%20acc%20after%202017.jpg)
+![](images/%5Blabelled%5D%20sec%20sch%20acc%20after%202017.png)
 
 ![](images/sec%20sch%20acc%20after%202019.jpg)
 
@@ -135,24 +139,15 @@ Hence, while there is an overall decrease in accessibility to secondary schools 
 
 ### Pre-tertiary Institutions
 
-![](images/accesibility%20pre-merger.png)
+![](images/%5Blabelled%5D%20pre-tertiary%20acc%20before%202019.png)
 
-![](images/accesibility%20post%20merger.png)
+![](images/%5Blabelled%5D%20pre-tertiary%20acc%20after%202019.png)
 
-In 2019, 4 pairs of Junior Colleges (JC) in different regions of Singapore were merged in response to the decreasing JC intake. Given that there were originally not many JCs and there was a considerable distance between the JCs for each pair before merger, this merger had a **greater decrease in accessibility** compared to primary and secondary schools. In the highlighted Area 1, Serangoon Junior College merged with Anderson Junior College, causing less accessibility in the Hougang subzone. The shortest distance from schools for students living in Hougang increased from the range 0-3034 to 3285-5396. 
+Out of the three education levels our team analysed, mergers of pre-tertiary instituitions had the greatest impact on accessibility. This is likely because there were originally not many Junior Colleges (JC) and there was a considerable distance between the various pre-tertiary institutions before merger, hence this merger had a **greater decrease in accessibility** compared to primary and secondary schools. While our study included Polytechnics, International Baccalaureate programs, and other schools, only 4 pairs of JC, each in different regions of Singapore, were merged as part of the College Rejuvenation Programme by the government. This was in response to decreasing enrollment rates for JC.
 
-Likewise, in the highlighted Area 2, Tampines Junior College merged with Meridian Junior College, causing accessibility in the Tampines subzone to decrease as the shortest distance from schools for students in this Area also increased from the range 0-3034 to 3285-5396.
+In the highlighted Area 1, Serangoon Junior College merged with Anderson Junior College, resulting in both schools moving to Anderson Junior College's original campus and the closure of Serangoon Junior College's existing campus. This decreased accessibility for students living in the Hougang subzone. This can be seen as the shortest distance to the nearest JC for students living in Hougang increased from 3034 to 5396. 
 
-## Conclusion
-
-In conclusion, the merging of schools in Singapore has brought about an overall decrease in accessibility to schools across Singapore. However, while there was a decrease in accessibility, this change is still minimal as schools that were merged were in close proximity to one another. Should the government need to merge more schools, it would be advisable to continue merging schools that are already in close proximity. The impact of merging schools that are further apart from one another can be observed from the merger of pre-tertiary institutions. However, we acknowledge that as people get older (e.g. primary school students vs pre-tertiary students), they are likely to be more willing to travel a longer distance. 
+In the highlighted Area 2, Tampines Junior College merged with Meridian Junior College, resulting in both schools moving to Meridian Junior College's original campus and the closure of Tampines Junior College's existing campus. This decreased accessibility for students living in the Tampines subzone as the shortest distance to the nearest JC for students living in Tampines increased from the range 3034 to 5396.
 
 \
-
-That being said, these mergers may have underlying implications on costs and standard of living which we are unable to observe directly from the visual differences between the maps. One reason for an increase in costs of living is due to the increase in time needed to travel as schools are now further away. Additionally, there may be an increase in costs as people who could previously walk to school now need to take public transport, and even for people who previously took public transport, the distance they need to travel now may be greater than before. 
-
-\
-
-However, our group still believes that even though there was a decrease in accessibility, the changes were minimal, hence the equity of access to schools in Singapore is still maintained.
-
-\
+To sum up, the mergers of pre-tertiary institutions, specifically Junior Colleges, definitely brought about decreased accessibility for students as there were already a limited number of JC to start with. However, in the grand scheme of things, the mergers were necessary given the decreasing enrollment rates which were predicted to fall to as low as 200 to 300 students. Hence, the mergers were needed to prevent a waste of resources and inefficient manpower allocation.
